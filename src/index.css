@@ -10,9 +10,16 @@
   font-family: Druk-Cond;
   src: url(assets/font/DrukCond-Super-Trial.otf);
 }
+@font-face {
+  font-family: Roboto;
+  src: url(assets/font/Roboto-Medium.ttf);
+}
 
 .druk{
   font-family: Druk-Cond;
+}
+.roboto{
+  font-family:Roboto;
 }
 
 body{
