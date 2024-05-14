@@ -7,7 +7,6 @@ function classNames(...classes) {
 }
 
 export default function Header() {
-  <title>My Title</title>
   const [colorChange, setColorChange] = useState({ jc: false, about: false, blog: false, contact: false });
 
   useEffect(() => {
