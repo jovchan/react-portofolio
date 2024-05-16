@@ -14,7 +14,14 @@
   font-family: Roboto;
   src: url(assets/font/Roboto-Medium.ttf);
 }
+@font-face {
+  font-family: Courier;
+  src: url(assets/font/CourierPrime-Regular.ttf);
+}
 
+.courier{
+  font-family: Courier;
+}
 .druk{
   font-family: Druk-Cond;
 }

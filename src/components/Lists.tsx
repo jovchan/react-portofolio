@@ -34,36 +34,13 @@ export default function List() {
       }, []);
 
   return (
-    <div className={`h-95vh bg-abu overflow-auto m-6 druk snap-y snap-mandatory kontener transition-all duration-1000 hide-scrollbar ${colorChange.list1 ? 'bg-oren' : ''}`}>
-      <div className="snap-center flex flex-col md:flex-row m-6 gap-4 md:gap-8">
-        <img src={foto1} alt="" className="w-full md:w-1/2 transition-all" />
-        <div className="w-full text-hitam md:w-1/2 flex flex-wrap items-center text-7xl lg:text-9xl md:text-7xl sm:text-8xl">
+    <div className={`h-95vh bg-abu overflow-auto m-6 druk snap-y snap-mandatory kontener grid transition-all duration-1000 gap-8 hide-scrollbar ${colorChange.list1 ? 'bg-oren' : ''}`}>
+      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44">
+        <img src={foto1} alt="" className="w-full lg:w-1/2 transition-all drop-shadow-3xl" />
+        <div className="w-full text-hitam lg:w-1/2 flex flex-wrap items-center text-7xl lg:text-9xl sm:text-8xl">
           <span className="text-abu mr-8 ">.001</span> GAMING GEAR <br />
-          <p className="roboto text-xl">This is my first website that i ever made, i made this website using HTML, CSS, JS. </p>
-        </div>
-      </div>
-      <div className="snap-center flex flex-col md:flex-row m-6 gap-4 md:gap-8">
-        <img src={foto1} alt="" className="w-full md:w-1/2 transition-all" />
-        <div className="w-full text-hitam md:w-1/2 flex items-center  text-7xl lg:text-9xl md:text-8xl sm:text-8xl">
-          <span className="text-abu mr-8">.001</span> GAMING GEAR
-        </div>
-      </div>
-      <div className="snap-center flex flex-col md:flex-row m-6 gap-4 md:gap-8">
-        <img src={foto1} alt="" className="w-full md:w-1/2 transition-all" />
-        <div className="w-full text-hitam md:w-1/2 flex items-center  text-7xl lg:text-9xl md:text-8xl sm:text-8xl">
-          <span className="text-abu mr-8">.001</span> GAMING GEAR
-        </div>
-      </div>
-      <div className="snap-center flex flex-col md:flex-row m-6 gap-4 md:gap-8">
-        <img src={foto1} alt="" className="w-full md:w-1/2 transition-all" />
-        <div className="w-full text-hitam md:w-1/2 flex items-center  text-7xl lg:text-9xl md:text-8xl sm:text-8xl">
-          <span className="text-abu mr-8">.001</span> GAMING GEAR
-        </div>
-      </div>
-      <div className="snap-center flex flex-col md:flex-row m-6 gap-4 md:gap-8">
-        <img src={foto1} alt="" className="w-full md:w-1/2 transition-all" />
-        <div className="w-full text-hitam md:w-1/2 flex items-center  text-7xl lg:text-9xl md:text-8xl sm:text-8xl">
-          <span className="text-abu mr-8">.001</span> GAMING GEAR
+          <p className="courier text-xl xl:text-3xl mt-0  sm:underline-offset-4">This website represents my inaugural foray into web development, utilizing HTML, CSS, and JavaScript. It serves as a dedicated platform to showcase the gaming equipment that has been integral to my personal computing setup from its inception.
+          </p>
         </div>
       </div>
     </div>
