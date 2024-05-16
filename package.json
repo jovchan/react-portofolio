@@ -17,10 +17,13 @@
     "framer-motion": "^11.1.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-scroll-parallax": "^3.4.5",
     "smooth-scroll-into-view-if-needed": "^2.0.2"
   },
   "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__generator": "^7.6.8",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/parser": "^7.8.0",

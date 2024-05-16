@@ -3,6 +3,7 @@
         "./src/**/*"
     ],
     "compilerOptions": {
+        "types": ["babel__generator"],
         "strict": true,
         "esModuleInterop": true,
         "lib": [

@@ -182,3 +182,7 @@ body{
   background: var(--accent);
   bottom: 100px;
 }
+
+.carousel .carousel-status {
+  margin-bottom: 0;
+}

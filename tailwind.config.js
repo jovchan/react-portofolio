@@ -32,10 +32,8 @@ export default {
     },
     dropShadow: {
       '3xl': '0 25px 35px rgba(0, 0, 0, 1)',
-      '4xl': [
-          '0 35px 35px rgba(0, 0, 0, 0.25)',
-          '0 45px 65px rgba(0, 0, 0, 0.15)'
-      ]
+      '4xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+      'logo': '0 5px 5px rgba(0, 0, 0, 0.5)'
     }
   },
   plugins: [
