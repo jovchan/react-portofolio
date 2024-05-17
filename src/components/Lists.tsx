@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import foto1 from "./photos/1.jpg";
 import foto2 from "./photos/2.jpg";
 import foto3 from "./photos/3.jpg";
@@ -65,9 +65,11 @@ export default function List() {
     return () => observer.disconnect();
   }, []);
 
+  
+
   return (
     <div
-      className={`h-95vh bg-abu overflow-auto m-6 druk snap-y snap-mandatory kontener grid transition-all duration-1000 gap-8 hide-scrollbar ${
+      className={`h-95vh bg-abu flex-grow overflow-auto m-6 druk snap-y snap-mandatory kontener grid transition-all duration-1000 gap-8 hide-scrollbar ${
         colorChange.list1 ? "bg-oren" : ""
       }`}
     >
