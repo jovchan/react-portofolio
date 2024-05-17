@@ -82,11 +82,11 @@ export default function List() {
 
   return (
     <div
-      className={`h-95vh bg-abu flex-grow overflow-auto m-6 druk snap-y snap-mandatory kontener grid transition-all duration-1000 gap-8 hide-scrollbar ${
+      className={`h-95vh bg-abu flex-grow overflow-auto m-6 druk snap-y snap-mandatory kontener grid transition-all hide-scrollbar duration-1000 gap-8 ${
         colorChange.list1 ? "bg-oren" : ""
       }`}
     >
-      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center">
+      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 items-center">
         <Carousel
           showThumbs={false}
           swipeable={true}
@@ -132,7 +132,7 @@ export default function List() {
           </p>
         </div>
       </div>
-      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center md:hidden">
+      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 items-center md:hidden">
         <Carousel
           showThumbs={false}
           swipeable={true}
@@ -174,7 +174,7 @@ export default function List() {
           </p>
         </div>
       </div>
-      <div className="snap-center hidden flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center md:flex">
+      <div className="snap-center hidden flex-col lg:flex-row m-6 gap-4 items-center md:flex">
         <div className="keterangan w-full text-hitam lg:w-1/2 flex flex-wrap items-center text-7xl xl:text-9xl sm:text-8xl m-auto text-right justify-end">
           <div className="w-full flex drop-shadow-logo gap-6 items-end justify-end">
             <img
@@ -216,7 +216,7 @@ export default function List() {
           </div>
         </Carousel>
       </div>
-      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center">
+      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 items-center">
         <Carousel
           showThumbs={false}
           swipeable={true}
@@ -244,7 +244,7 @@ export default function List() {
           </p>
         </div>
       </div>
-      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center md:hidden">
+      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 items-center md:hidden">
         <Carousel
           showThumbs={false}
           swipeable={true}
@@ -297,7 +297,7 @@ export default function List() {
           </p>
         </div>
       </div>
-      <div className="snap-center hidden flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center md:flex">
+      <div className="snap-center hidden flex-col lg:flex-row m-6 gap-4 items-center md:flex">
         <div className="keterangan w-full text-hitam lg:w-1/2 flex flex-wrap items-center text-7xl xl:text-9xl sm:text-8xl m-auto text-right justify-end">
           <div className="w-full flex drop-shadow-logo gap-6 items-end justify-end">
             <img
