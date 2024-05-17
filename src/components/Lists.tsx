@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import foto1 from "./photos/1.jpg";
 import foto2 from "./photos/2.jpg";
 import foto3 from "./photos/3.jpg";
@@ -65,6 +65,19 @@ export default function List() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    var container = document.querySelector('.kontener');
+
+    if (container !== null) {
+      container.addEventListener('scroll', function() {
+        var isAtTop = container!.scrollTop === 0;
+        var isAtBottom = container!.scrollHeight - container!.scrollTop === container!.clientHeight;
+
+        document.body.style.overflow = isAtTop || isAtBottom ? 'auto' : 'hidden';
+      });
+    }
+  }, []);
+
   
 
   return (
@@ -119,7 +132,7 @@ export default function List() {
           </p>
         </div>
       </div>
-      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center">
+      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center md:hidden">
         <Carousel
           showThumbs={false}
           swipeable={true}
@@ -161,6 +174,48 @@ export default function List() {
           </p>
         </div>
       </div>
+      <div className="snap-center hidden flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center md:flex">
+        <div className="keterangan w-full text-hitam lg:w-1/2 flex flex-wrap items-center text-7xl xl:text-9xl sm:text-8xl m-auto text-right justify-end">
+          <div className="w-full flex drop-shadow-logo gap-6 items-end justify-end">
+            <img
+              src={reactLogo}
+              className="w-12 lg:w-16 xl:w-20"
+              alt="HTML Logo"
+            />
+            <img
+              src={tailwindLogo}
+              className="w-12 lg:w-16 xl:w-20"
+              alt="CSS Logo"
+            />
+          </div>
+          <span className="text-abu mr-8 ">.002</span> DomPortof
+          <p className="courier text-xl xl:text-2xl 2xl:text-3xl mt-0">
+          I’m working on my first client project, creating a personal portfolio using React.js and Tailwind CSS. This project is a key milestone in my career, showcasing my skills and commitment to delivering high-quality, user-friendly websites.
+          </p>
+        </div>
+        <Carousel
+          showThumbs={false}
+          swipeable={true}
+          showStatus={false}
+          className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
+        >
+          <div>
+            <img src={foto6} alt="" />
+          </div>
+          <div>
+            <img src={foto7} alt="" />
+          </div>
+          <div>
+            <img src={foto8} alt="" />
+          </div>
+          <div>
+            <img src={foto9} alt="" />
+          </div>
+          <div>
+            <img src={foto10} alt="" />
+          </div>
+        </Carousel>
+      </div>
       <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center">
         <Carousel
           showThumbs={false}
@@ -189,7 +244,7 @@ export default function List() {
           </p>
         </div>
       </div>
-      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center">
+      <div className="snap-center flex flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center md:hidden">
         <Carousel
           showThumbs={false}
           swipeable={true}
@@ -241,6 +296,59 @@ export default function List() {
           I had the privilege of serving as a web developer for PT. ARC Property Indonesia, a renowned property agency. I was responsible for the creation of their innovative website, which revolutionizes the way they serve their clients by offering fully furnished office spaces for rent.
           </p>
         </div>
+      </div>
+      <div className="snap-center hidden flex-col lg:flex-row m-6 gap-4 md:gap-8 my-44 items-center md:flex">
+        <div className="keterangan w-full text-hitam lg:w-1/2 flex flex-wrap items-center text-7xl xl:text-9xl sm:text-8xl m-auto text-right justify-end">
+          <div className="w-full flex drop-shadow-logo gap-6 items-end justify-end">
+            <img
+              src={htmlLogo}
+              className="w-12 lg:w-16 xl:w-20"
+              alt="html Logo"
+            />
+            <img
+              src={tailwindLogo}
+              className="w-12 lg:w-16 xl:w-20"
+              alt="tailwind Logo"
+            />
+            <img
+              src={jsLogo}
+              className="w-12 lg:w-16 xl:w-20"
+              alt="javascript Logo"
+            />
+          </div>
+          <span className="text-abu mr-8 ">.004</span> Work From Office
+          <p className="courier text-xl xl:text-2xl 2xl:text-3xl mt-2">
+          I had the privilege of serving as a web developer for PT. ARC Property Indonesia, a renowned property agency. I was responsible for the creation of their innovative website, which revolutionizes the way they serve their clients by offering fully furnished office spaces for rent.
+          </p>
+        </div>
+        <Carousel
+          showThumbs={false}
+          swipeable={true}
+          showStatus={false}
+          className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
+        >
+          <div>
+            <img src={foto13} alt="" />
+          </div>
+          <div>
+            <img src={foto14} alt="" />
+          </div>
+          <div>
+            <img src={foto15} alt="" />
+          </div>
+          <div>
+            <img src={foto16} alt="" />
+          </div>
+          <div>
+            <img src={foto17} alt="" />
+          </div>
+          <div>
+            <img src={foto18} alt="" />
+          </div>
+          <div>
+            <img src={foto19} alt="" />
+          </div>
+        </Carousel>
       </div>
     </div>
   );

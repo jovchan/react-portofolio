@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+// import React, {} from 'react' 
 import Header from './components/Header.jsx'
 import Title from './components/Title.jsx'
 import MyWorks from './components/MyWorks.jsx'
@@ -6,8 +6,9 @@ import Lists from './components/Lists.tsx'
 import Footer from './components/Footer.jsx'
 
 function App() {
+
   return (
-    <div className="flex flex-col min-h-screen">
+    <div>
       <Header />
       <Title />
       <MyWorks />
