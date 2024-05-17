@@ -33,7 +33,7 @@ export default function Header() {
         <ul className="flex justify-between items-center h-full">
           <li className="flex-grow flex items-center m-3">
           <span className={`hover:text-abu transition-all duration-200 transform hover:scale-110 ${colorChange.jc ? 'text-oren' : ''}`}>
-              <a href="#">P.A</a>
+              <a href="#">J.C</a>
             </span>
           </li>
           <div className="flex-grow justify-between hidden sm:flex">
