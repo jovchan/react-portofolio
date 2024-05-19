@@ -18,7 +18,16 @@
   font-family: Courier;
   src: url(assets/font/CourierPrime-Regular.ttf);
 }
+@font-face {
+  font-family: Plaster;
+  src: url(assets/font/Plaster-Regular.ttf);
+}
 
+
+
+.plaster{
+  font-family: Plaster;
+}
 .courier{
   font-family: Courier;
 }

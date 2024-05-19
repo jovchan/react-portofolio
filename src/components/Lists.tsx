@@ -152,6 +152,11 @@ export default function List() {
           </div>
         </div>
       </Animasi>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-4 sm:border-b-8 border-hitam mx-6 opacity-0 fade-in2"></div>
       <Animasi>
         <div className="flex flex-col lg:flex-row m-6 gap-4 items-center md:hidden">
           <Carousel
@@ -242,6 +247,11 @@ export default function List() {
           </Carousel>
         </div>
       </Animasi>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-4 sm:border-b-8 border-hitam mx-6 opacity-0 fade-in2"></div>
       <Animasi>
         <div className="flex flex-col lg:flex-row m-6 gap-4 items-center">
           <Carousel
@@ -273,6 +283,11 @@ export default function List() {
           </div>
         </div>
       </Animasi>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-4 sm:border-b-8 border-hitam mx-6 opacity-0 fade-in2"></div>
       <Animasi>
         <div className="flex flex-col lg:flex-row m-6 gap-4 items-center md:hidden">
           <Carousel
@@ -385,6 +400,10 @@ export default function List() {
           </Carousel>
         </div>
       </Animasi>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-hitam mx-6 opacity-0 fade-in2"></div>
     </div>
   );
 }
