@@ -1,5 +1,5 @@
 // @ts-ignore
-import { useRef } from "react";
+import { useRef, ReactNode } from "react";
 import {
   motion,
   useScroll,
@@ -12,7 +12,12 @@ import {
 import { wrap } from "@motionone/utils";
 
 
-function ParallaxText({ children , baseVelocity = 0.5 }) {
+interface ParallaxTextProps {
+  children: ReactNode;
+  baseVelocity?: number;
+}
+
+function ParallaxText({ children , baseVelocity = 0.5 }: ParallaxTextProps) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
