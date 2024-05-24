@@ -28,7 +28,7 @@ function Image({ id, src }: { id: number, src: string }) {
 
   return (
     <section className="flex flex-wrap justify-between md:flex-row flex-col items-center w-full">
-      <div ref={ref} className="bg-abu md:h-full md:w-48 h-48 w-full">
+      <div ref={ref} className="bg-accent md:h-full md:w-48 h-48 w-full">
         <img src={src} alt={`Image ${id}`} className="max-w-full h-auto w-1/2 absolute"/>
       </div>
       <motion.h2 style={{ y }} className="mt-4 md:mt-0">{`#00${id}`}</motion.h2>
@@ -65,7 +65,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="container-sendiri m-6 bg-oren">
+    <div className="container-sendiri m-6 bg-secondary">
       {images.map((src, index) => (
         <Image id={index + 1} src={src}/>
       ))}

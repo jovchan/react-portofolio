@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <div className="">
-        <div className="border-b-4 sm:border-b-8 border-abu mx-6 opacity-0 fade-in3"></div>
-      <footer className="footer footer-center p-10 bg-primary text-primary-content text-oren text-center items-center">
+        <div className="border-b-4 sm:border-b-8 border-accent mx-6 opacity-0 fade-in3"></div>
+      <footer className="footer footer-center p-10 bg-primary text-primary-content text-secondary text-center items-center">
         <aside>
           <svg
             width="50"

@@ -1,6 +1,7 @@
 import flowbitePlugin from 'flowbite/plugin';
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -9,13 +10,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'hitam': '#131313',
-        'oren': '#D1603D',
-        // 'abu': '#878787',
-        // 'abu': '#FAF9F6',
-        // 'abu': '#FFFFFF',
-        'abu': '#363636',
-        'abu-gelap': '#1d1d1d',
+        'neutral': '#c2c2c2',
+        'primary': '#131313',
+        'secondary': '#D1603D',
+        'accent': '#363636',
+        'base-100': '#1d1d1d',
       },
       maxHeight: {
         '90vh': '90vh',
@@ -51,5 +50,22 @@ export default {
       addUtilities(newUtilities)
     }
   ],
+
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          'neutral': '#c2c2c2',
+        'primary': '#131313',
+        'secondary': '#D1603D',
+        'accent': '#363636',
+        'base-100': '#1d1d1d',
+        },
+      },
+      "dark",
+      "cupcake",
+      "light",
+    ],
+  },
 }
 

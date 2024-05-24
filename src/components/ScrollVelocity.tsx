@@ -66,8 +66,8 @@ function ParallaxText({ children , baseVelocity = 0.5 }: ParallaxTextProps) {
 
 export default function App() {
   return (
-    <section className="relative druk text-oren text-7xl xl:text-9xl sm:text-8xl">
-      <div className="border-b-4 sm:border-b-8 border-abu mx-6 opacity-0 fade-in3"></div>
+    <section className="relative druk text-secondary text-7xl xl:text-9xl sm:text-8xl">
+      <div className="border-b-4 sm:border-b-8 border-accent mx-6 opacity-0 fade-in3"></div>
       <ParallaxText baseVelocity={-2}><span className="">Jovian</span></ParallaxText>
       <ParallaxText baseVelocity={2}><span className="">Chandra</span></ParallaxText>
     </section>

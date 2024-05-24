@@ -8,6 +8,17 @@ function classNames(...classes) {
 
 export default function Header() {
   const [colorChange, setColorChange] = useState({ jc: false, about: false, blog: false, contact: false });
+  const darkToggle = document.querySelector('#dark-toggle');
+  const html = document.querySelector('html');
+
+  // darkToggle.addEventListener('click',function(){
+  //   if(darkToggle.checked){
+  //     html.classList.add('dark');
+  //   } else {
+  //     html.classList.remove('dark');
+  //   }
+  // })
+
 
   useEffect(() => {
     const timer1 = setTimeout(() => setColorChange(prev => ({ ...prev, jc: true })), 200);
@@ -28,34 +39,34 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="text-6xl text-abu sm:text-7 bg-hitam">
+    <div className="text-6xl text-accent sm:text-7 bg-primary">
       <nav className="druk p-4 h-16 my-2">
         <ul className="flex justify-between items-center h-full">
           <li className="flex-grow flex items-center m-3">
-          <span className={`hover:text-abu transition-all duration-200 transform hover:scale-110 ${colorChange.jc ? 'text-oren' : ''}`}>
+          <span className={`hover:text-accent transition-all duration-200 transform hover:scale-110 ${colorChange.jc ? 'text-secondary' : ''}`}>
               <a href="#">J.C</a>
             </span>
           </li>
           <div className="flex-grow justify-between hidden sm:flex">
-          <li className={`hover:text-abu px-3 rounded-md transition-all duration-200 transform hover:scale-110 ${colorChange.about ? 'text-oren' : ''}`}>
+          <li className={`hover:text-accent px-3 rounded-md transition-all duration-200 transform hover:scale-110 ${colorChange.about ? 'text-secondary' : ''}`}>
               <a href="#">ABOUT</a>
             </li>
-            <li className={`hover:text-abu px-3 rounded-md transition-all duration-200 transform hover:scale-110 ${colorChange.blog ? 'text-oren' : ''}`}>
+            <li className={`hover:text-accent px-3 rounded-md transition-all duration-200 transform hover:scale-110 ${colorChange.blog ? 'text-secondary' : ''}`}>
               <a href="#">BLOG</a>
             </li>
-            <li className={`hover:text-abu px-3 rounded-md transition-all duration-200 transform hover:scale-110 ${colorChange.contact ? 'text-oren' : ''}`}>
+            <li className={`hover:text-accent px-3 rounded-md transition-all duration-200 transform hover:scale-110 ${colorChange.contact ? 'text-secondary' : ''}`}>
               <a href="#">CONTACT</a>
             </li>
             <li className=" flex items-center mr-6">
               <div className="flex">
-                <span className={`mr-2 hidden xl:flex transition-all duration-200 ${colorChange.dark ? 'text-oren' : ''}`}>DARK</span>
+                <span className={`mr-2 hidden xl:flex transition-all duration-200 ${colorChange.dark ? 'text-secondary' : ''}`}>DARK</span>
                 <input type="checkbox" className="hidden" id="dark-toggle" />
                 <label htmlFor="dark-toggle">
-                  <div className="flex h-6 w-14 cursor-pointer my-4 items-center rounded-full bg-abu p-1">
-                    <div className="toggle-circle h-4 w-4 rounded-full bg-oren transition duration-300 ease-in-out"></div>
+                  <div className="flex h-6 w-14 cursor-pointer my-4 items-center rounded-full bg-accent p-1">
+                    <div className="toggle-circle h-4 w-4 rounded-full bg-secondary transition duration-300 ease-in-out"></div>
                   </div>
                 </label>
-                <span className={`ml-2 hidden xl:flex transition-all duration-200 ${colorChange.light ? 'text-oren' : ''}`}>LIGHT</span>
+                <span className={`ml-2 hidden xl:flex transition-all duration-200 ${colorChange.light ? 'text-secondary' : ''}`}>LIGHT</span>
               </div>
             </li>
           </div>
@@ -65,7 +76,7 @@ export default function Header() {
             className="relative inline-block text-left sm:hidden mr-2"
           >
             <div>
-              <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-abu-gelap px-2 py-1 font-semibold text-oren shadow-sm   hover:bg-abu-gelap">
+              <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-base-100 px-2 py-1 font-semibold text-secondary shadow-sm   hover:bg-base-100">
                 MENU
                 <ChevronDownIcon
                   className="-mr-1 h-5 w-5 text-gray-400"
@@ -83,7 +94,7 @@ export default function Header() {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className="absolute right-0 z-10 mt-4 w-64 origin-top-right rounded-md bg-abu-gelap shadow-lg focus:outline-none">
+              <Menu.Items className="absolute right-0 z-10 mt-4 w-64 origin-top-right rounded-md bg-base-100 shadow-lg focus:outline-none">
                 <div className="py-1">
                   <Menu.Item className="transition-all duration-200 transform hover:scale-110">
                     {({ active }) => (
@@ -91,8 +102,8 @@ export default function Header() {
                         href="#"
                         className={classNames(
                           active
-                            ? "bg-oren text-hitam rounded-md"
-                            : "text-oren",
+                            ? "bg-secondary text-primary rounded-md"
+                            : "text-secondary",
                           "block px-4 py-2"
                         )}
                       >
@@ -106,8 +117,8 @@ export default function Header() {
                         href="#"
                         className={classNames(
                           active
-                            ? "bg-oren text-hitam rounded-md"
-                            : "text-oren",
+                            ? "bg-secondary text-primary rounded-md"
+                            : "text-secondary",
                           "block px-4 py-2"
                         )}
                       >
@@ -121,8 +132,8 @@ export default function Header() {
                         href="#"
                         className={classNames(
                           active
-                            ? "bg-oren text-hitam rounded-md"
-                            : "text-oren",
+                            ? "bg-secondary text-primary rounded-md"
+                            : "text-secondary",
                           "block px-4 py-2"
                         )}
                       >
@@ -135,7 +146,7 @@ export default function Header() {
                       <a
                         href="#"
                         className={classNames(
-                          active ? "text-oren rounded-md" : "text-oren",
+                          active ? "text-secondary rounded-md" : "text-secondary",
                           "block px-4 py-2"
                         )}
                       >
@@ -148,8 +159,8 @@ export default function Header() {
                               id="dark-toggle"
                             />
                             <label htmlFor="dark-toggle">
-                              <div className="flex h-6 w-14 cursor-pointer my-4 items-center rounded-full bg-hitam p-1">
-                                <div className="toggle-circle h-4 w-4 rounded-full bg-oren transition duration-300 ease-in-out"></div>
+                              <div className="flex h-6 w-14 cursor-pointer my-4 items-center rounded-full bg-primary p-1">
+                                <div className="toggle-circle h-4 w-4 rounded-full bg-secondary transition duration-300 ease-in-out"></div>
                               </div>
                             </label>
                             <span className="ml-2">LIGHT</span>
@@ -164,7 +175,7 @@ export default function Header() {
           </Menu>
         </ul>
       </nav>
-      <div className="border-t-4 sm:border-t-8 border-abu mx-6 opacity-0 fade-in"></div>
+      <div className="border-t-4 sm:border-t-8 border-accent mx-6 opacity-0 fade-in"></div>
     </div>
   );
 }
