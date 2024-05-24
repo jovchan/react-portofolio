@@ -9,7 +9,7 @@ import ScrollVelocity from './components/ScrollVelocity.tsx'
 function App() {
 
   return (
-    <div>
+    <div className='dark:bg-neutral'>
       <Header />
       <Title />
       <MyWorks />

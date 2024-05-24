@@ -11,13 +11,13 @@ export default function Header() {
   const darkToggle = document.querySelector('#dark-toggle');
   const html = document.querySelector('html');
 
-  // darkToggle.addEventListener('click',function(){
-  //   if(darkToggle.checked){
-  //     html.classList.add('dark');
-  //   } else {
-  //     html.classList.remove('dark');
-  //   }
-  // })
+  darkToggle.addEventListener('click',function(){
+    if(darkToggle.checked){
+      html.classList.add('dark');
+    } else {
+      html.classList.remove('dark');
+    }
+  })
 
 
   useEffect(() => {
@@ -39,8 +39,8 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="text-6xl text-accent sm:text-7 bg-primary">
-      <nav className="druk p-4 h-16 my-2">
+    <div className="text-6xl text-accent sm:text-7 bg-primary dark:bg-neutral">
+      <nav className="druk p-4 h-16">
         <ul className="flex justify-between items-center h-full">
           <li className="flex-grow flex items-center m-3">
           <span className={`hover:text-accent transition-all duration-200 transform hover:scale-110 ${colorChange.jc ? 'text-secondary' : ''}`}>
