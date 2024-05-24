@@ -15,6 +15,7 @@ export default {
         'secondary': '#D1603D',
         'accent': '#363636',
         'base-100': '#1d1d1d',
+        'abu-putih': '#9d9d9d'
       },
       maxHeight: {
         '90vh': '90vh',
@@ -66,6 +67,10 @@ export default {
       "cupcake",
       "light",
     ],
+  },
+  corePlugins: {
+    transitionProperty: true,
+    transitionDuration: true,
   },
 }
 
