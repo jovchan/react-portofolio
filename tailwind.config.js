@@ -12,7 +12,9 @@ export default {
       colors: {
         'neutral': '#c2c2c2',
         'primary': '#131313',
+        'primary2': '#FBF6EE',
         'secondary': '#D1603D',
+        'secondary2': '#FFB534',
         'accent': '#363636',
         'base-100': '#1d1d1d',
         'abu-putih': '#9d9d9d'

@@ -17,7 +17,7 @@ export default function MyWorks() {
 
   return (
     <div>
-      <div className="flex justify-between text-7xl mx-6 lg:text-9xl md:text-8xl sm:text-8xl text-accent druk">
+      <div className="flex justify-between text-7xl mx-6 lg:text-9xl md:text-8xl sm:text-8xl text-accent dark:text-abu-putih druk">
         <p className={`transition-all duration-500 ${colorChange.c1 ? 'text-secondary' : ''}`}>MY WORKS</p>
         <div className=" druk flex">
           <span className={`transition-all duration-500 ${colorChange.c2 ? 'text-secondary' : ''}`}>1</span>
@@ -36,7 +36,7 @@ export default function MyWorks() {
           <span className={`transition-all duration-500 ${colorChange.c3 ? 'text-secondary' : ''}`}>4</span>
         </div>
       </div>
-      <div className="border-b-4 sm:border-b-8 border-accent mx-6 opacity-0 fade-in3"></div>
+      <div className="border-b-4 sm:border-b-8 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in3"></div>
     </div>
   );
 }

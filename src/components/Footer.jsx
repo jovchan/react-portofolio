@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <div className="">
-        <div className="border-b-4 sm:border-b-8 border-accent mx-6 opacity-0 fade-in3"></div>
-      <footer className="footer footer-center p-10 bg-primary text-primary-content text-secondary text-center items-center">
+        <div className="border-b-4 sm:border-b-8 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in3"></div>
+      <footer className="footer footer-center p-10 bg-primary dark:bg-neutral text-primary-content text-secondary text-center items-center">
         <aside>
           <svg
             width="50"
@@ -18,7 +18,7 @@ export default function Footer() {
           <p className="font-bold">
             Jovian Chandra Santoso <br />
           </p>
-          <p>Copyright © 2024 - All right reserved</p>
+          <p className="text-neutral dark:text-primary">Copyright © 2024 - All right reserved</p>
         </aside>
         <nav>
           <div className="grid grid-flow-col justify-center items-center gap-4">

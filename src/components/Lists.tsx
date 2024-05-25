@@ -107,8 +107,8 @@ export default function List() {
               />
               <img src={jsLogo} className="w-12 lg:w-16 xl:w-20" alt="JS Logo" />
             </div>
-            <span className="text-accent mr-8 ">.001</span> GAMING GEAR
-            <p className="courier text-neutral text-xl xl:text-2xl 2xl:text-3xl mt-0">
+            <span className="text-accent mr-8 dark:text-abu-putih ">.001</span> GAMING GEAR
+            <p className="courier text-neutral dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-0">
               This website represents my inaugural foray into web development,
               utilizing HTML, CSS, and JavaScript. It serves as a dedicated
               platform to showcase the gaming equipment that has been integral to
@@ -117,11 +117,11 @@ export default function List() {
           </div>
         </div>
       </Animasi>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/80 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/60 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/40 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-4 sm:border-b-8 border-accent/20 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/80 dark:border-abu-putih/80 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/60 dark:border-abu-putih/60 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/40 dark:border-abu-putih/40 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-4 sm:border-b-8 border-accent/20 dark:border-abu-putih/20 mx-6 opacity-0 fade-in2"></div>
       <Animasi>
         <div className="flex flex-col lg:flex-row m-6 gap-4 items-center md:hidden">
           <Carousel
@@ -160,8 +160,8 @@ export default function List() {
                 alt="CSS Logo"
               />
             </div>
-            <span className="text-accent mr-8 ">.002</span> DomPortof
-            <p className="courier text-neutral text-xl xl:text-2xl 2xl:text-3xl mt-0">
+            <span className="text-accent dark:text-abu-putih mr-8 ">.002</span> DomPortof
+            <p className="courier text-neutral dark:text-primary dark:text-abu-putih text-xl xl:text-2xl 2xl:text-3xl mt-0">
               I’m working on my first client project, creating a personal portfolio using React.js and Tailwind CSS. This project is a key milestone in my career, showcasing my skills and commitment to delivering high-quality, user-friendly websites.
             </p>
           </div>
@@ -182,8 +182,8 @@ export default function List() {
                 alt="CSS Logo"
               />
             </div>
-            <span className="text-accent mr-8 ">.002</span> DomPortof
-            <p className="courier text-neutral text-xl xl:text-2xl 2xl:text-3xl mt-0">
+            <span className="text-accent dark:text-abu-putih mr-8 ">.002</span> DomPortof
+            <p className="courier text-neutral dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-0">
               I’m working on my first client project, creating a personal portfolio using React.js and Tailwind CSS. This project is a key milestone in my career, showcasing my skills and commitment to delivering high-quality, user-friendly websites.
             </p>
           </div>
@@ -212,11 +212,11 @@ export default function List() {
           </Carousel>
         </div>
       </Animasi>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/80 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/60 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/40 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-4 sm:border-b-8 border-accent/20 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/80 dark:border-abu-putih/80 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/60 dark:border-abu-putih/60 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/40 dark:border-abu-putih/40 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-4 sm:border-b-8 border-accent/20 dark:border-abu-putih/20 mx-6 opacity-0 fade-in2"></div>
       <Animasi>
         <div className="flex flex-col lg:flex-row m-6 gap-4 items-center">
           <Carousel
@@ -233,7 +233,7 @@ export default function List() {
               <img src={foto11} alt="" />
             </div>
           </Carousel>
-          <div className="keterangan w-full text-secondary lg:w-1/2 flex flex-wrap items-center text-7xl xl:text-9xl sm:text-8xl m-auto">
+          <div className="keterangan w-full text-secondary lg:w-1/2 flex flex-wrap items-center text-6xl xl:text-8xl sm:text-7xl m-auto">
             <div className="w-full flex drop-shadow-logo">
               <img
                 src={wordpressLogo}
@@ -241,18 +241,18 @@ export default function List() {
                 alt="Wordpress Logo"
               />
             </div>
-            <span className="text-accent mr-8 ">.003</span> Sewakantor-update
-            <p className="courier text-neutral text-xl xl:text-2xl 2xl:text-3xl mt-2">
+            <span className="text-accent dark:text-abu-putih mr-8 ">.003</span> Sewakantor-update
+            <p className="courier text-neutral dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
               I served as a web developer for PT. Charis Mulia Indonesia, a property agency, for seven months. My responsibilities included maintaining their website, “sewakantor-update.com”, enhancing the user interface, and updating property data.
             </p>
           </div>
         </div>
       </Animasi>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/80 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/60 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/40 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-4 sm:border-b-8 border-accent/20 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/80 dark:border-abu-putih/80 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/60 dark:border-abu-putih/60 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/40 dark:border-abu-putih/40 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-4 sm:border-b-8 border-accent/20 dark:border-abu-putih/20 mx-6 opacity-0 fade-in2"></div>
       <Animasi>
         <div className="flex flex-col lg:flex-row m-6 gap-4 items-center md:hidden">
           <Carousel
@@ -302,8 +302,8 @@ export default function List() {
                 alt="javascript Logo"
               />
             </div>
-            <span className="text-accent mr-8 ">.004</span> Work From Office
-            <p className="courier text-neutral text-xl xl:text-2xl 2xl:text-3xl mt-2">
+            <span className="text-accent dark:text-abu-putih mr-8 ">.004</span> Work From Office
+            <p className="courier text-neutral dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
               I had the privilege of serving as a web developer for PT. ARC Property Indonesia, a renowned property agency. I was responsible for the creation of their innovative website, which revolutionizes the way they serve their clients by offering fully furnished office spaces for rent.
             </p>
           </div>
@@ -329,8 +329,8 @@ export default function List() {
                 alt="javascript Logo"
               />
             </div>
-            <span className="text-accent mr-8 ">.004</span> Work From Office
-            <p className="courier text-neutral text-xl xl:text-2xl 2xl:text-3xl mt-2">
+            <span className="text-accent dark:text-abu-putih mr-8 ">.004</span> Work From Office
+            <p className="courier text-neutral dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
               I had the privilege of serving as a web developer for PT. ARC Property Indonesia, a renowned property agency. I was responsible for the creation of their innovative website, which revolutionizes the way they serve their clients by offering fully furnished office spaces for rent.
             </p>
           </div>
@@ -365,10 +365,10 @@ export default function List() {
           </Carousel>
         </div>
       </Animasi>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/80 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/60 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/40 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/20 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/80 dark:border-abu-putih/80 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/60 dark:border-abu-putih/60 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/40 dark:border-abu-putih/40 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 border-accent/20 dark:border-abu-putih/20 mx-6 opacity-0 fade-in2"></div>
     </div>
   );
 }

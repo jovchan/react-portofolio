@@ -55,30 +55,30 @@ export default function Header() {
       <nav className="druk p-4 h-16">
         <ul className="flex justify-between items-center h-full">
           <li className="flex-grow flex items-center m-3">
-          <span className={`hover:text-accent transition-all dark:text-primary duration-200 transform hover:scale-110 ${colorChange.jc ? 'text-secondary' : ''}`}>
+          <span className={`hover:text-accent transition-all  duration-200 transform hover:scale-110 ${colorChange.jc ? 'text-secondary' : ''}`}>
               <a href="#">J.C</a>
             </span>
           </li>
           <div className="flex-grow justify-between hidden sm:flex">
-          <li className={`hover:text-accent px-3 rounded-md transition-all dark:text-primary transform hover:scale-110 duration-200 ${colorChange.about ? 'text-secondary' : ''}`}>
+          <li className={`hover:text-accent px-3 rounded-md transition-all  transform hover:scale-110 duration-200 ${colorChange.about ? 'text-secondary' : ''}`}>
               <a href="#">ABOUT</a>
             </li>
-            <li className={`hover:text-accent px-3 rounded-md transition-all dark:text-primary duration-200 transform hover:scale-110 ${colorChange.blog ? 'text-secondary' : ''}`}>
+            <li className={`hover:text-accent px-3 rounded-md transition-all  duration-200 transform hover:scale-110 ${colorChange.blog ? 'text-secondary' : ''}`}>
               <a href="#">BLOG</a>
             </li>
-            <li className={`hover:text-accent px-3 rounded-md transition-all dark:text-primary duration-200 transform hover:scale-110 ${colorChange.contact ? 'text-secondary' : ''}`}>
+            <li className={`hover:text-accent px-3 rounded-md transition-all  duration-200 transform hover:scale-110 ${colorChange.contact ? 'text-secondary' : ''}`}>
               <a href="#">CONTACT</a>
             </li>
             <li className=" flex items-center mr-6">
               <div className="flex">
-                <span className={`mr-2 dark:text-primary hidden xl:flex transition-all duration-200 ${colorChange.dark ? 'text-secondary' : ''}`}>DARK</span>
+                <span className={`mr-2  hidden xl:flex transition-all duration-200 ${colorChange.dark ? 'text-secondary' : ''}`}>DARK</span>
                 <input type="checkbox" className="hidden" id="dark-toggle" />
                 <label htmlFor="dark-toggle">
                   <div className="flex h-6 w-14 cursor-pointer my-4 items-center rounded-full bg-accent dark:bg-abu-putih transition-all duration-1000 p-1">
-                    <div className="toggle-circle h-4 w-4 rounded-full bg-secondary dark:bg-primary transition duration-300 ease-in-out"></div>
+                    <div className="toggle-circle h-4 w-4 rounded-full bg-secondary transition duration-300 ease-in-out"></div>
                   </div>
                 </label>
-                <span className={`ml-2 dark:text-primary hidden xl:flex transition-all duration-200 ${colorChange.light ? 'text-secondary' : ''}`}>LIGHT</span>
+                <span className={`ml-2  hidden xl:flex transition-all duration-200 ${colorChange.light ? 'text-secondary' : ''}`}>LIGHT</span>
               </div>
             </li>
           </div>
@@ -88,7 +88,7 @@ export default function Header() {
             className="relative inline-block text-left sm:hidden mr-2"
           >
             <div>
-              <Menu.Button className="inline-flex w-full dark:text-primary justify-center gap-x-1.5 rounded-md bg-base-100 px-2 py-1 font-semibold text-secondary shadow-sm   hover:bg-base-100">
+              <Menu.Button className="inline-flex w-full transition-all duration-1000 justify-center gap-x-1.5 rounded-md bg-base-100 dark:bg-neutral px-2 font-semibold text-secondary shadow-xl   hover:bg-base-100">
                 MENU
                 <ChevronDownIcon
                   className="-mr-1 h-5 w-5 text-gray-400"
@@ -106,7 +106,7 @@ export default function Header() {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className="absolute right-0 z-10 mt-4 w-64 origin-top-right rounded-md bg-base-100 shadow-lg focus:outline-none">
+              <Menu.Items className="absolute right-0 z-10 mt-4 w-64 origin-top-right rounded-md bg-base-100 dark:bg-neutral shadow-lg focus:outline-none">
                 <div className="py-1">
                   <Menu.Item className="transition-all duration-200 transform hover:scale-110">
                     {({ active }) => (
@@ -171,8 +171,8 @@ export default function Header() {
                               id="dark-toggle"
                             />
                             <label htmlFor="dark-toggle">
-                              <div className="flex h-6 w-14 cursor-pointer my-4 items-center rounded-full bg-primary p-1">
-                                <div className="toggle-circle h-4 w-4 rounded-full bg-secondary dark:bg-primary transition duration-300 ease-in-out"></div>
+                              <div className="flex h-6 w-14 cursor-pointer my-4 items-center rounded-full bg-primary dark:bg-abu-putih p-1">
+                                <div className="toggle-circle h-4 w-4 rounded-full bg-secondary transition duration-300 ease-in-out"></div>
                               </div>
                             </label>
                             <span className="ml-2">LIGHT</span>
