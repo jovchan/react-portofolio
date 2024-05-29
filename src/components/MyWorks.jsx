@@ -26,7 +26,7 @@ export default function MyWorks() {
             width="0.8em"
             height="1em"
             viewBox="0 0 1024 1024"
-            className="flex"
+            className="flex transition-all duration-1000"
           >
             <path
               fill="currentColor"
@@ -36,7 +36,7 @@ export default function MyWorks() {
           <span className={`transition-all duration-500 ${colorChange.c3 ? 'text-secondary' : ''}`}>4</span>
         </div>
       </div>
-      <div className="border-b-4 sm:border-b-8 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in3"></div>
+      <div className="border-b-4 sm:border-b-8 border-accent transition-all duration-1000 dark:border-abu-putih mx-6 opacity-0 fade-in3"></div>
     </div>
   );
 }
