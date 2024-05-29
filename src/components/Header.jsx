@@ -64,10 +64,10 @@ export default function Header() {
               <a href="#">ABOUT</a>
             </li>
             <li className={`hover:text-accent px-3 rounded-md transition-all  duration-200 transform hover:scale-110 ${colorChange.blog ? 'text-secondary' : ''}`}>
-              <a href="#">BLOG</a>
+              <a href="mailto:jovianchandras@gmail.com" target="_blank">EMAIL</a>
             </li>
             <li className={`hover:text-accent px-3 rounded-md transition-all  duration-200 transform hover:scale-110 ${colorChange.contact ? 'text-secondary' : ''}`}>
-              <a href="#">CONTACT</a>
+              <a href="https://www.linkedin.com/in/jovian-chandra-santoso/" target="_blank">LINKEDIN</a>
             </li>
             <li className=" flex items-center mr-6">
               <div className="flex">
@@ -126,7 +126,8 @@ export default function Header() {
                   <Menu.Item className="transition-all duration-200 transform hover:scale-110">
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="mailto:jovianchandras@gmail.com"
+                        target="_blank"
                         className={classNames(
                           active
                             ? "bg-secondary text-primary rounded-md"
@@ -134,14 +135,15 @@ export default function Header() {
                           "block px-4 py-2"
                         )}
                       >
-                        BLOG
+                        EMAIL
                       </a>
                     )}
                   </Menu.Item>
                   <Menu.Item className="transition-all duration-200 transform hover:scale-110">
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="https://www.linkedin.com/in/jovian-chandra-santoso/"
+                        target="_blank"
                         className={classNames(
                           active
                             ? "bg-secondary text-primary rounded-md"
@@ -149,7 +151,7 @@ export default function Header() {
                           "block px-4 py-2"
                         )}
                       >
-                        CONTACT
+                        LINKEDIN
                       </a>
                     )}
                   </Menu.Item>
