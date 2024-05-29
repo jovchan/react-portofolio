@@ -6,6 +6,7 @@ import Lists from './components/Lists.tsx'
 import Footer from './components/Footer.jsx'
 import ScrollVelocity from './components/ScrollVelocity.tsx'
 import Loading from './components/Loader/Loader.tsx'
+import Certificates from './components/Certificates/Title.jsx'
 import { useEffect, useState } from "react";
 
 function App() {
@@ -23,8 +24,10 @@ function App() {
       <Title />
       <MyWorks />
       <Lists />
-      <ScrollVelocity />
+      <Certificates />
       <Footer />
+      <ScrollVelocity />
+
     </div>
   );
 }

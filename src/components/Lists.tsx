@@ -161,7 +161,7 @@ export default function List() {
               />
             </div>
             <span className="text-accent dark:text-abu-putih transition-all duration-1000 mr-8 ">.002</span> DomPortof
-            <p className="courier text-neutral dark:text-primary dark:text-abu-putih transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
+            <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
               I’m working on my first client project, creating a personal portfolio using React.js and Tailwind CSS. This project is a key milestone in my career, showcasing my skills and commitment to delivering high-quality, user-friendly websites.
             </p>
           </div>

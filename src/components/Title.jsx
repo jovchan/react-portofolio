@@ -62,6 +62,8 @@ export default function Title() {
       <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-7 opacity-0 fade-in2"></div>
       <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-7 opacity-0 fade-in2"></div>
       <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-7 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-7 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-7 opacity-0 fade-in2"></div>
       <div className="border-b-4 sm:border-b-8 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-7 opacity-0 fade-in2"></div>
     </div>
   );
