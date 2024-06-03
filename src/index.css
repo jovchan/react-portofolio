@@ -100,3 +100,12 @@ body{
     transition: animation-play-state 1s ease;
   }
 }
+
+::-moz-selection {
+  background: #D1603D;
+  color: black;
+}
+::selection {
+  background: #D1603D; /* This is a light red color */
+  color: black; /* This is the text color */
+}

@@ -6,6 +6,11 @@ import cer4 from "./photos/cer/cer4.png";
 import cer5 from "./photos/cer/cer5.png";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Pdf1 from "./photos/cer/cer1.pdf";
+import Pdf2 from "./photos/cer/cer2.pdf";
+import Pdf3 from "./photos/cer/cer3.pdf";
+import Pdf4 from "./photos/cer/cer4.pdf";
+import Pdf5 from "./photos/cer/cer5.pdf";
 
 const images = [cer1, cer2, cer3, cer4, cer5];
 
@@ -48,36 +53,41 @@ export default function Certificate() {
                   key={index}
                   className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
                   src={img}
-                  alt=""
+                  alt={`Certificate ${index + 1}`}
+                  onClick={() => window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], '_blank')}
                 />
               ))}
+              {/* Repeat the mapping for the infinite loop effect */}
               {images.map((img, index) => (
                 <img
                   key={index + images.length}
                   className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
                   src={img}
-                  alt=""
-                />
-              ))}
-            </div>
-            <div className="flex space-x-16 my-4 animate-loop-scroll">
-              {images.map((img, index) => (
-                <img
-                  key={index + images.length * 2}
-                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
-                  src={img}
-                  alt=""
+                  alt={`Certificate ${index + 1}`}
+                  onClick={() => window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], '_blank')}
                 />
               ))}
               {images.map((img, index) => (
                 <img
-                  key={index + images.length * 3}
+                  key={index}
                   className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
                   src={img}
-                  alt=""
+                  alt={`Certificate ${index + 1}`}
+                  onClick={() => window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], '_blank')}
+                />
+              ))}
+              {/* Repeat the mapping for the infinite loop effect */}
+              {images.map((img, index) => (
+                <img
+                  key={index + images.length}
+                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
+                  src={img}
+                  alt={`Certificate ${index + 1}`}
+                  onClick={() => window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], '_blank')}
                 />
               ))}
             </div>
+            {/* ... (repeat the mapping for additional loops if necessary) */}
           </div>
           <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-primary to-transparent"></div>
           <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-primary to-transparent"></div>

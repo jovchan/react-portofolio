@@ -107,7 +107,9 @@ export default function List() {
               />
               <img src={jsLogo} className="w-12 lg:w-16 xl:w-20" alt="JS Logo" />
             </div>
-            <span className="text-accent mr-8 transition-all duration-1000 dark:text-abu-putih ">.001</span> GAMING GEAR
+            <a href="https://jovchan.github.io/gaming-gear/" target="_blank" className="hover:scale-105 transition-all">
+            <span className="text-accent mr-8 transition-all duration-1000 dark:text-abu-putih " >.001</span> GAMING GEAR
+            </a>
             <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
               This website represents my inaugural foray into web development,
               utilizing HTML, CSS, and JavaScript. It serves as a dedicated
@@ -161,7 +163,9 @@ export default function List() {
                 alt="CSS Logo"
               />
             </div>
+            <a href="https://dominic-christiansen.vercel.app/" target="_blank" className="hover:scale-105 transition-all">
             <span className="text-accent dark:text-abu-putih transition-all duration-1000 mr-8 ">.002</span> DomPortof
+            </a>
             <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
               I’m working on my first client project, creating a personal portfolio using React.js and Tailwind CSS. This project is a key milestone in my career, showcasing my skills and commitment to delivering high-quality, user-friendly websites.
             </p>
@@ -183,7 +187,9 @@ export default function List() {
                 alt="CSS Logo"
               />
             </div>
+            <a href="https://dominic-christiansen.vercel.app/" target="_blank" className="hover:scale-105 transition-all">
             <span className="text-accent dark:text-abu-putih mr-8 ">.002</span> DomPortof
+            </a>
             <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
               I’m working on my first client project, creating a personal portfolio using React.js and Tailwind CSS. This project is a key milestone in my career, showcasing my skills and commitment to delivering high-quality, user-friendly websites.
             </p>
@@ -244,7 +250,9 @@ export default function List() {
                 alt="Wordpress Logo"
               />
             </div>
+            <a href="https://www.sewakantor-update.com/" target="_blank" className="hover:scale-105 transition-all">
             <span className="text-accent transition-all duration-1000 dark:text-abu-putih mr-8 ">.003</span> Sewakantor-update
+            </a>
             <p className="courier text-neutral transition-all duration-1000 dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
               I served as a web developer for PT. Charis Mulia Indonesia, a property agency, for seven months. My responsibilities included maintaining their website, “sewakantor-update.com”, enhancing the user interface, and updating property data.
             </p>
@@ -306,7 +314,9 @@ export default function List() {
                 alt="javascript Logo"
               />
             </div>
+            <a href="#" target="_blank" className="hover:scale-105 transition-all">
             <span className="text-accent transition-all duration-1000 dark:text-abu-putih mr-8 ">.004</span> Work From Office
+            </a>
             <p className="courier text-neutral transition-all duration-1000 dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
               I had the privilege of serving as a web developer for PT. ARC Property Indonesia, a renowned property agency. I was responsible for the creation of their innovative website, which revolutionizes the way they serve their clients by offering fully furnished office spaces for rent.
             </p>
@@ -333,7 +343,9 @@ export default function List() {
                 alt="javascript Logo"
               />
             </div>
+            <div className="hover:scale-105 transition-all">
             <span className="text-accent transition-all duration-1000 dark:text-abu-putih mr-8 ">.004</span> Work From Office
+            </div>
             <p className="courier text-neutral transition-all duration-1000 dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
               I had the privilege of serving as a web developer for PT. ARC Property Indonesia, a renowned property agency. I was responsible for the creation of their innovative website, which revolutionizes the way they serve their clients by offering fully furnished office spaces for rent.
             </p>

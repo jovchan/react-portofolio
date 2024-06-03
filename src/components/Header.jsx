@@ -1,6 +1,7 @@
 import { Fragment , useState, useEffect } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import Pdf from './photos/CV.pdf';
 
 
 function classNames(...classes) {
@@ -62,7 +63,7 @@ export default function Header() {
           </li>
           <div className="flex-grow justify-between hidden sm:flex">
           <li className={`hover:text-accent px-3 rounded-md transition-all  transform hover:scale-110 duration-200 ${colorChange.about ? 'text-secondary' : ''}`}>
-              <a href="/photos/CV.pdf" target="_blank">ABOUT</a>
+              <a href={Pdf} target="_blank">ABOUT</a>
             </li>
             <li className={`hover:text-accent px-3 rounded-md transition-all  duration-200 transform hover:scale-110 ${colorChange.blog ? 'text-secondary' : ''}`}>
               <a href="mailto:jovianchandras@gmail.com" target="_blank">EMAIL</a>
