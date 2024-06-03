@@ -22,11 +22,11 @@ function App() {
     <div className='dark:bg-neutral transition-all duration-1000'>
       <Header />
       <Title />
-      <ScrollVelocity />
       <MyWorks />
       <Lists />
       <Certificate />
       <Footer />
+      <ScrollVelocity />
 
     </div>
   );

@@ -66,13 +66,13 @@ function ParallaxText({ children , baseVelocity = 0.5 }: ParallaxTextProps) {
 
 export default function App() {
   return (
-    <section className="relative druk text-accent dark:text-abu-putih transition-all duration-1000 text-7xl xl:text-9xl sm:text-8xl">
+    <section className="border-t-4 sm:border-t-8 border-accent dark:border-abu-putih mt-4 relative druk text-accent dark:text-abu-putih transition-all duration-1000 text-7xl xl:text-9xl sm:text-8xl">
       <ParallaxText baseVelocity={-2}><span className="">Jovian</span></ParallaxText>
       <ParallaxText baseVelocity={2}><span className="">Chandra</span></ParallaxText>
-      <div className="border-b-4 sm:border-b-8 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 opacity-0 fade-in3"></div>
+      {/* <div className="border-b-4 sm:border-b-8 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 opacity-0 fade-in3"></div>
       <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-7 opacity-0 fade-in2"></div>
       <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-7 opacity-0 fade-in2"></div>
-      <div className="border-b-4 sm:border-b-8 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-7 opacity-0 fade-in2"></div>
+      <div className="border-b-4 sm:border-b-8 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-7 opacity-0 fade-in2"></div> */}
     </section>
   );
 }
