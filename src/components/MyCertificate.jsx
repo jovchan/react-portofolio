@@ -40,13 +40,13 @@ export default function Certificate() {
       <div className="border-b-4 sm:border-b-8 border-accent transition-all duration-1000 dark:border-abu-putih mx-6 opacity-0 fade-in3"></div>
 
       <Animasi>
-        <div className="relative mx-6 ">
+        <div className="relative mx-6 z-10">
           <div className="flex overflow-hidden space-x-16 group">
             <div className="flex space-x-16 my-4 animate-loop-scroll">
               {images.map((img, index) => (
                 <img
                   key={index}
-                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all"
+                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
                   src={img}
                   alt=""
                 />
@@ -54,7 +54,7 @@ export default function Certificate() {
               {images.map((img, index) => (
                 <img
                   key={index + images.length}
-                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all"
+                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
                   src={img}
                   alt=""
                 />
@@ -64,7 +64,7 @@ export default function Certificate() {
               {images.map((img, index) => (
                 <img
                   key={index + images.length * 2}
-                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all"
+                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
                   src={img}
                   alt=""
                 />
@@ -72,7 +72,7 @@ export default function Certificate() {
               {images.map((img, index) => (
                 <img
                   key={index + images.length * 3}
-                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all"
+                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
                   src={img}
                   alt=""
                 />
