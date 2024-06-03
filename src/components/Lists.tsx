@@ -107,7 +107,7 @@ export default function List() {
               />
               <img src={jsLogo} className="w-12 lg:w-16 xl:w-20" alt="JS Logo" />
             </div>
-            <a href="https://jovchan.github.io/gaming-gear/" target="_blank" className="hover:scale-105 transition-all">
+            <a href="https://jovchan.github.io/gaming-gear/" target="_blank" className="hover:text-asen transition-all">
             <span className="text-accent mr-8 transition-all duration-1000 dark:text-abu-putih " >.001</span> GAMING GEAR
             </a>
             <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
@@ -163,7 +163,7 @@ export default function List() {
                 alt="CSS Logo"
               />
             </div>
-            <a href="https://dominic-christiansen.vercel.app/" target="_blank" className="hover:scale-105 transition-all">
+            <a href="https://dominic-christiansen.vercel.app/" target="_blank" className="hover:text-asen transition-all">
             <span className="text-accent dark:text-abu-putih transition-all duration-1000 mr-8 ">.002</span> DomPortof
             </a>
             <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
@@ -187,7 +187,7 @@ export default function List() {
                 alt="CSS Logo"
               />
             </div>
-            <a href="https://dominic-christiansen.vercel.app/" target="_blank" className="hover:scale-105 transition-all">
+            <a href="https://dominic-christiansen.vercel.app/" target="_blank" className="hover:text-asen transition-all">
             <span className="text-accent dark:text-abu-putih mr-8 ">.002</span> DomPortof
             </a>
             <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
@@ -250,7 +250,7 @@ export default function List() {
                 alt="Wordpress Logo"
               />
             </div>
-            <a href="https://www.sewakantor-update.com/" target="_blank" className="hover:scale-105 transition-all">
+            <a href="https://www.sewakantor-update.com/" target="_blank" className="hover:text-asen transition-all">
             <span className="text-accent transition-all duration-1000 dark:text-abu-putih mr-8 ">.003</span> Sewakantor-update
             </a>
             <p className="courier text-neutral transition-all duration-1000 dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
@@ -314,7 +314,7 @@ export default function List() {
                 alt="javascript Logo"
               />
             </div>
-            <a href="#" target="_blank" className="hover:scale-105 transition-all">
+            <a href="#" target="_blank" className="hover:text-asen transition-all">
             <span className="text-accent transition-all duration-1000 dark:text-abu-putih mr-8 ">.004</span> Work From Office
             </a>
             <p className="courier text-neutral transition-all duration-1000 dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
@@ -343,7 +343,7 @@ export default function List() {
                 alt="javascript Logo"
               />
             </div>
-            <div className="hover:scale-105 transition-all">
+            <div className="hover:text-asen transition-all">
             <span className="text-accent transition-all duration-1000 dark:text-abu-putih mr-8 ">.004</span> Work From Office
             </div>
             <p className="courier text-neutral transition-all duration-1000 dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">

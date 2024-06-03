@@ -17,7 +17,8 @@ export default {
         'secondary2': '#FFB534',
         'accent': '#363636',
         'base-100': '#1d1d1d',
-        'abu-putih': '#9d9d9d'
+        'abu-putih': '#9d9d9d',
+        'asen': '#434343',
       },
       maxHeight: {
         '90vh': '90vh',

@@ -49,7 +49,13 @@ body{
 
 /* width */
 ::-webkit-scrollbar {
-  display: none;
+  width: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Track */
@@ -59,13 +65,13 @@ body{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #363636;
+  background: #D1603D;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #D1603D;
+  background: #363636;
 }
 
 #dark-toggle:checked ~ label div.toggle-circle {
@@ -108,4 +114,13 @@ body{
 ::selection {
   background: #D1603D; /* This is a light red color */
   color: black; /* This is the text color */
+}
+
+.float-svg {
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }

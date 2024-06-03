@@ -38,61 +38,77 @@ export default function Certificate() {
     <div>
       <div className="border-b-4 sm:border-b-8 border-accent transition-all duration-1000 dark:border-abu-putih mx-6 opacity-0 fade-in3"></div>
       <div className="flex justify-between text-7xl mx-6 lg:text-9xl md:text-8xl sm:text-8xl text-accent dark:text-abu-putih druk">
-        <p className={`transition-all duration-500 text-secondary`}>
-          CERTIFICATES
-        </p>
+        <Animasi>
+          <p className={`transition-all duration-500 text-secondary`}>
+            CERTIFICATES
+          </p>
+        </Animasi>
       </div>
       <div className="border-b-4 sm:border-b-8 border-accent transition-all duration-1000 dark:border-abu-putih mx-6 opacity-0 fade-in3"></div>
 
       <Animasi>
-        <div className="relative mx-6 z-10">
-          <div className="flex overflow-hidden space-x-16 group">
+        <div className="relative mx-6 z-10 py-4 border-b-2 border-accent dark:border-abu-putih transition-all duration-1000">
+          <div className="flex overflow-hidden space-x-16 group ">
             <div className="flex space-x-16 my-4 animate-loop-scroll">
               {images.map((img, index) => (
                 <img
                   key={index}
-                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
+                  className="object-contain object-center h-72 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
                   src={img}
                   alt={`Certificate ${index + 1}`}
-                  onClick={() => window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], '_blank')}
+                  onClick={() =>
+                    window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], "_blank")
+                  }
                 />
               ))}
               {/* Repeat the mapping for the infinite loop effect */}
               {images.map((img, index) => (
                 <img
                   key={index + images.length}
-                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
+                  className="object-contain object-center h-72 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
                   src={img}
                   alt={`Certificate ${index + 1}`}
-                  onClick={() => window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], '_blank')}
+                  onClick={() =>
+                    window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], "_blank")
+                  }
                 />
               ))}
               {images.map((img, index) => (
                 <img
                   key={index}
-                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
+                  className="object-contain object-center h-72 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
                   src={img}
                   alt={`Certificate ${index + 1}`}
-                  onClick={() => window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], '_blank')}
+                  onClick={() =>
+                    window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], "_blank")
+                  }
                 />
               ))}
               {/* Repeat the mapping for the infinite loop effect */}
               {images.map((img, index) => (
                 <img
                   key={index + images.length}
-                  className="object-contain object-center h-96 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
+                  className="object-contain object-center h-72 md:h-120 max-w-none hover:scale-110 hover:shadow-2xl transition-all opacity-75 hover:opacity-100"
                   src={img}
                   alt={`Certificate ${index + 1}`}
-                  onClick={() => window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], '_blank')}
+                  onClick={() =>
+                    window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], "_blank")
+                  }
                 />
               ))}
             </div>
             {/* ... (repeat the mapping for additional loops if necessary) */}
           </div>
-          <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-primary to-transparent"></div>
-          <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-primary to-transparent"></div>
+          <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-primary dark:from-neutral to-transparent"></div>
+          <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-primary dark:from-neutral to-transparent"></div>
         </div>
       </Animasi>
+
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-14 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-14 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-14 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-14 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-14 opacity-0 fade-in2"></div>
     </div>
   );
 }

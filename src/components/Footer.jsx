@@ -1,65 +1,174 @@
+/* eslint-disable react/prop-types */
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+
 export default function Footer() {
+  function Animasi(props) {
+    const animasi = useRef(null);
+    const isInView = useInView(animasi, { once: true });
+
+    return (
+      <section ref={animasi}>
+        <span
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0.2,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
+          {props.children}
+        </span>
+      </section>
+    );
+  }
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <div className="">
-        <div className="border-b-4 sm:border-b-8 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in3"></div>
-      <footer className="footer footer-center p-10 bg-primary dark:bg-neutral text-primary-content text-secondary text-center items-center">
-        <aside>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            className="inline-block fill-current"
-          >
-            <path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
-          </svg>
-          <p className="font-bold">
-            Jovian Chandra Santoso <br />
+      <div className="border-b-4 sm:border-b-8 border-accent transition-all duration-1000 dark:border-abu-putih mx-6 opacity-0 fade-in3"></div>
+      <div className="flex justify-between text-7xl mx-6 lg:text-9xl md:text-8xl sm:text-8xl text-accent dark:text-abu-putih druk">
+        <Animasi>
+          <p className={`transition-all duration-500 text-secondary`}>
+            GET IN TOUCH
           </p>
-          <p className="text-neutral dark:text-primary">Copyright © 2024 - All right reserved</p>
-        </aside>
-        <nav>
-          <div className="grid grid-flow-col justify-center items-center gap-4">
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-              </svg>
+        </Animasi>
+      </div>
+      <div className="border-b-4 sm:border-b-8 border-accent transition-all duration-1000 dark:border-abu-putih mx-6 opacity-0 fade-in3"></div>
+
+      <div className="flex justify-between text-7xl mx-6 lg:text-9xl md:text-8xl sm:text-8xl text-accent dark:text-abu-putih druk lg:hidden">
+        <Animasi>
+          <p
+            className={`transition-all duration-500 text-accent dark:text-abu-putih`}
+          >
+            THANKS FOR VISITING. YOU CAN CONTACT ME ANYTIME WITH{" "}
+            <a
+              className="text-secondary hover:text-asen"
+              href="emailto:jovianchandras@gmail.com"
+              target="_blank"
+            >
+              EMAIL
+            </a>{" "}
+            OR{" "}
+            <a
+              className="text-secondary hover:text-asen"
+              href="https://www.linkedin.com/in/jovian-chandra-santoso/"
+              target="_blank"
+            >
+              LINKEDIN
             </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
+          </p>
+        </Animasi>
+      </div>
+
+      <div className="hidden justify-between items-center text-7xl mx-6 lg:text-9xl md:text-8xl sm:text-8xl text-accent dark:text-abu-putih druk lg:flex">
+        <div className="">
+          <Animasi>
+            <p
+              className={`transition-all duration-500 text-accent dark:text-abu-putih`}
+            >
+              THANKS FOR VISITING. YOU CAN CONTACT ME ANYTIME WITH{" "}
+              <a
+                className="text-secondary hover:text-asen"
+                href="emailto:jovianchandras@gmail.com"
+                target="_blank"
               >
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-              </svg>
-            </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
+                EMAIL
+              </a>{" "}
+              OR{" "}
+              <a
+                className="text-secondary hover:text-asen"
+                href="https://www.linkedin.com/in/jovian-chandra-santoso/"
+                target="_blank"
               >
-                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-              </svg>
-            </a>
-          </div>
-        </nav>
-      </footer>
+                LINKEDIN
+              </a>
+            </p>
+          </Animasi>
+        </div>
+
+        <div className="flex stroke-accent">
+        <svg
+          width="23"
+          height="85"
+          viewBox="0 0 23 85"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            y1="-1"
+            x2="22"
+            y2="-1"
+            transform="matrix(-1 0 0 1 23 85)"
+            stroke="#363636"
+            strokeWidth="4"
+          />
+          <line
+            y1="-1"
+            x2="22"
+            y2="-1"
+            transform="matrix(-1 0 0 1 23 2)"
+            stroke="#363636"
+            strokeWidth="4"
+          />
+          <line
+            y1="-1"
+            x2="85"
+            y2="-1"
+            transform="matrix(-4.37114e-08 1 1 4.37114e-08 2 0)"
+            stroke="#363636"
+            strokeWidth="4"
+          />
+        </svg>
+
+        <svg
+          // width="125"
+          height="100"
+          viewBox="0 0 80 64"
+          fill="white"
+          xmlns="http://www.w3.org/2000/svg"
+          className="cursor-pointer float-svg"
+          onClick={scrollToTop}
+        >
+          <path
+            d="M19.1968 19.2L21.4592 21.0099L38.3968 7.45984L38.3968 61.44L41.5968 61.44L41.5968 7.45984L58.5408 21.0125L60.8032 19.2026L39.9968 2.56L19.1968 19.2Z"
+            fill="#363636"
+          />
+        </svg>
+        <svg
+          width="23"
+          height="85"
+          viewBox="0 0 23 85"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="84" x2="22" y2="84" stroke="#363636" strokeWidth="4" />
+          <line y1="1" x2="22" y2="1" stroke="#363636" strokeWidth="4" />
+          <line
+            x1="22"
+            y1="-4.37114e-08"
+            x2="22"
+            y2="85"
+            stroke="#363636"
+            strokeWidth="4"
+          />
+        </svg>
+        </div>
+      </div>
+
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-5 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-5 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-5 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-5 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-5 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-5 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-5 opacity-0 fade-in2"></div>
+      <div className="border-b-2 sm:border-b-2 border-accent dark:border-abu-putih transition-all duration-1000 mx-6 h-5 opacity-0 fade-in2"></div>
     </div>
   );
 }
-
-
