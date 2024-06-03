@@ -93,3 +93,10 @@ body{
 .carousel .carousel-status {
   margin-bottom: 0;
 }
+
+@layer utilities{
+  .paused {
+    animation-play-state: paused;
+    transition: animation-play-state 1s ease;
+  }
+}

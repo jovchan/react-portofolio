@@ -27,10 +27,20 @@ export default {
       },
       height: {
         '95vh': '95vh',
+        '120' : '35rem',
       },
       screens: {
         // '2xl': '1320px',
       },
+      animation: {
+        "loop-scroll": "loop-scroll 50s linear infinite"
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" }
+        }
+      }
     },
     dropShadow: {
       '3xl': '0 25px 35px rgba(0, 0, 0, 1)',

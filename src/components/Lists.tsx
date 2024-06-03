@@ -26,7 +26,6 @@ import jsLogo from "../assets/png/js.png";
 import reactLogo from "../assets/png/react.png";
 import tailwindLogo from "../assets/png/tailwind.png";
 import wordpressLogo from "../assets/png/wordpress.png";
-import smoothScrollIntoView from "smooth-scroll-into-view-if-needed";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -75,6 +74,7 @@ export default function List() {
             showThumbs={false}
             swipeable={true}
             showStatus={false}
+            infiniteLoop={true}
             className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
           >
             <div>
@@ -129,6 +129,7 @@ export default function List() {
             showThumbs={false}
             swipeable={true}
             showStatus={false}
+            infiniteLoop={true}
             className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
           >
             <div>
@@ -192,6 +193,7 @@ export default function List() {
             showThumbs={false}
             swipeable={true}
             showStatus={false}
+            infiniteLoop={true}
             className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
           >
             <div>
@@ -224,6 +226,7 @@ export default function List() {
             showThumbs={false}
             swipeable={true}
             showStatus={false}
+            infiniteLoop={true}
             className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
           >
             <div>
@@ -260,6 +263,7 @@ export default function List() {
             showThumbs={false}
             swipeable={true}
             showStatus={false}
+            infiniteLoop={true}
             className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
           >
             <div>
@@ -339,6 +343,7 @@ export default function List() {
             showThumbs={false}
             swipeable={true}
             showStatus={false}
+            infiniteLoop={true}
             className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
           >
             <div>
