@@ -8,6 +8,7 @@ import Certificate from './components/MyCertificate.jsx'
 import ScrollVelocity from './components/ScrollVelocity.tsx'
 import Loading from './components/Loader/Loader.tsx'
 import { useEffect, useState } from "react";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -27,6 +28,7 @@ function App() {
       <Certificate />
       <Footer />
       <ScrollVelocity />
+      <SpeedInsights />
 
     </div>
   );
