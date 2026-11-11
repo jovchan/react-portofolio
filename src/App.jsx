@@ -9,6 +9,7 @@ import ScrollVelocity from './components/ScrollVelocity.tsx'
 import Loading from './components/Loader/Loader.tsx'
 import { useEffect, useState } from "react";
 import { SpeedInsights } from '@vercel/speed-insights/react';
+// import Lenis from '@studio-freight/lenis'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -18,6 +19,8 @@ function App() {
     if (loading) {
         return <Loading/>
     }
+    
+
 
   return (
     <div className='dark:bg-neutral transition-all duration-1000'>

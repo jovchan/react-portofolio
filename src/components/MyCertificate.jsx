@@ -4,6 +4,10 @@ import cer2 from "./photos/cer/cer2.png";
 import cer3 from "./photos/cer/cer3.png";
 import cer4 from "./photos/cer/cer4.png";
 import cer5 from "./photos/cer/cer5.png";
+import cer6 from "./photos/cer/cer6.png";
+import cer7 from "./photos/cer/cer7.png";
+import cer8 from "./photos/cer/cer8.png";
+import cer9 from "./photos/cer/cer9.png";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Pdf1 from "./photos/cer/cer1.pdf";
@@ -11,8 +15,13 @@ import Pdf2 from "./photos/cer/cer2.pdf";
 import Pdf3 from "./photos/cer/cer3.pdf";
 import Pdf4 from "./photos/cer/cer4.pdf";
 import Pdf5 from "./photos/cer/cer5.pdf";
+import Pdf6 from "./photos/cer/cer6.pdf";
+import Pdf7 from "./photos/cer/cer7.pdf";
+import Pdf8 from "./photos/cer/cer8.pdf";
+import Pdf9 from "./photos/cer/cer9.pdf";
 
-const images = [cer1, cer2, cer3, cer4, cer5];
+const images = [cer6, cer7, cer8, cer9, cer5, cer4, cer3, cer2, cer1];
+const pdfs = [Pdf6, Pdf7, Pdf8, Pdf9, Pdf5, Pdf4, Pdf3, Pdf2, Pdf1];
 
 export default function Certificate() {
   function Animasi(props) {
@@ -57,7 +66,7 @@ export default function Certificate() {
                   src={img}
                   alt={`Certificate ${index + 1}`}
                   onClick={() =>
-                    window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], "_blank")
+                    window.open(pdfs[index], "_blank")
                   }
                 />
               ))}
@@ -69,7 +78,7 @@ export default function Certificate() {
                   src={img}
                   alt={`Certificate ${index + 1}`}
                   onClick={() =>
-                    window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], "_blank")
+                    window.open(pdfs[index], "_blank")
                   }
                 />
               ))}
@@ -80,7 +89,7 @@ export default function Certificate() {
                   src={img}
                   alt={`Certificate ${index + 1}`}
                   onClick={() =>
-                    window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], "_blank")
+                    window.open(pdfs[index], "_blank")
                   }
                 />
               ))}
@@ -92,7 +101,7 @@ export default function Certificate() {
                   src={img}
                   alt={`Certificate ${index + 1}`}
                   onClick={() =>
-                    window.open([Pdf1, Pdf2, Pdf3, Pdf4, Pdf5][index], "_blank")
+                    window.open(pdfs[index], "_blank")
                   }
                 />
               ))}

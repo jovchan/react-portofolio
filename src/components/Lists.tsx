@@ -20,6 +20,12 @@ import foto16 from "./photos/16.jpg";
 import foto17 from "./photos/17.jpg";
 import foto18 from "./photos/18.jpg";
 import foto19 from "./photos/19.jpg";
+import foto20 from "./photos/20.jpg";
+import foto21 from "./photos/21.jpg";
+import foto22 from "./photos/22.jpg";
+import foto23 from "./photos/23.jpg";
+import foto24 from "./photos/24.jpg";
+import foto25 from "./photos/25.jpg";
 import htmlLogo from "../assets/png/html.png";
 import cssLogo from "../assets/png/css.png";
 import jsLogo from "../assets/png/js.png";
@@ -67,6 +73,7 @@ export default function List() {
       className={`bg-primary dark:bg-neutral flex-grow m-6 druk kontener grid transition-all hide-scrollbar duration-1000 gap-8 
         }`}
     >
+      {/* ===================== .006 Enhance AI (Row 1: Carousel Left, Text Right) ===================== */}
       <Animasi>
         <div className="flex flex-col lg:flex-row m-6 gap-4 items-center">
           <Carousel
@@ -78,54 +85,286 @@ export default function List() {
             className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
           >
             <div>
-              <img src={foto1} alt="" />
+              <img src={foto23} alt="Enhance AI Editor" />
             </div>
             <div>
-              <img src={foto2} alt="" />
+              <img src={foto24} alt="Enhance AI Features" />
             </div>
             <div>
-              <img src={foto3} alt="" />
-            </div>
-            <div>
-              <img src={foto4} alt="" />
-            </div>
-            <div>
-              <img src={foto5} alt="" />
+              <img src={foto25} alt="Enhance AI Workspace" />
             </div>
           </Carousel>
           <div className="keterangan w-full text-secondary lg:w-1/2 flex flex-wrap items-center text-7xl xl:text-9xl sm:text-8xl m-auto">
-            <div className="w-full flex drop-shadow-logo">
+            <div className="w-full flex drop-shadow-logo gap-6">
               <img
-                src={htmlLogo}
+                src={reactLogo}
                 className="w-12 lg:w-16 xl:w-20"
-                alt="HTML Logo"
+                alt="React Logo"
               />
               <img
-                src={cssLogo}
+                src={tailwindLogo}
                 className="w-12 lg:w-16 xl:w-20"
-                alt="CSS Logo"
+                alt="Tailwind CSS Logo"
               />
-              <img src={jsLogo} className="w-12 lg:w-16 xl:w-20" alt="JS Logo" />
             </div>
-            <a href="https://jovchan.github.io/gaming-gear/" target="_blank" className="hover:text-asen transition-all">
-            <span className="text-accent mr-8 transition-all duration-1000 dark:text-abu-putih " >.001</span> GAMING GEAR
+            <a href="https://enhance-ai-gamma.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-asen transition-all">
+              <span className="text-accent mr-8 transition-all duration-1000 dark:text-abu-putih">.006</span> Enhance AI
             </a>
             <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
-              This website represents my inaugural foray into web development,
-              utilizing HTML, CSS, and JavaScript. It serves as a dedicated
-              platform to showcase the gaming equipment that has been integral to
-              my personal computing setup from its inception.
+              Enhance AI is an intelligent AI-assisted writer and autocomplete editor designed to eliminate writer&apos;s block. Built with React and Tailwind CSS and powered by Google Gemini models, it features real-time ghost-text completions, structured document organization, and dynamic tone tuning.
             </p>
           </div>
         </div>
       </Animasi>
+
+      {/* Divider */}
       <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in2"></div>
       <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/80 dark:border-abu-putih/80 mx-6 opacity-0 fade-in2"></div>
       <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/60 dark:border-abu-putih/60 mx-6 opacity-0 fade-in2"></div>
       <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/40 dark:border-abu-putih/40 mx-6 opacity-0 fade-in2"></div>
       <div className="hidden md:block border-b-4 sm:border-b-8 transition-all duration-1000 border-accent/20 dark:border-abu-putih/20 mx-6 opacity-0 fade-in2"></div>
+
+      {/* ===================== .005 OmniMedia (Row 2: Carousel Right, Text Left on md) ===================== */}
       <Animasi>
         <div className="flex flex-col lg:flex-row m-6 gap-4 items-center md:hidden">
+          <Carousel
+            autoPlay={true}
+            showThumbs={false}
+            swipeable={true}
+            showStatus={false}
+            infiniteLoop={true}
+            className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
+          >
+            <div>
+              <img src={foto20} alt="OmniMedia Main" />
+            </div>
+            <div>
+              <img src={foto21} alt="OmniMedia Compress" />
+            </div>
+            <div>
+              <img src={foto22} alt="OmniMedia Detail" />
+            </div>
+          </Carousel>
+          <div className="keterangan w-full text-secondary lg:w-1/2 flex flex-wrap items-center text-7xl xl:text-9xl sm:text-8xl m-auto">
+            <div className="w-full flex drop-shadow-logo gap-6">
+              <img
+                src={reactLogo}
+                className="w-12 lg:w-16 xl:w-20"
+                alt="React Logo"
+              />
+              <img
+                src={tailwindLogo}
+                className="w-12 lg:w-16 xl:w-20"
+                alt="Tailwind CSS Logo"
+              />
+            </div>
+            <a href="https://omnimedia.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-asen transition-all">
+              <span className="text-accent dark:text-abu-putih transition-all duration-1000 mr-8">.005</span> OmniMedia
+            </a>
+            <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
+              OmniMedia is a comprehensive browser-based media conversion and compression suite. It enables seamless client-side conversion and compression for video, audio, and images with advanced format tuning, batch file processing, and bulk ZIP export.
+            </p>
+          </div>
+        </div>
+      </Animasi>
+      <Animasi>
+        <div className="hidden flex-col lg:flex-row m-6 gap-4 items-center md:flex">
+          <div className="keterangan w-full text-secondary lg:w-1/2 flex flex-wrap items-center text-7xl xl:text-9xl sm:text-8xl m-auto text-right justify-end">
+            <div className="w-full flex drop-shadow-logo gap-6 items-end justify-end">
+              <img
+                src={reactLogo}
+                className="w-12 lg:w-16 xl:w-20"
+                alt="React Logo"
+              />
+              <img
+                src={tailwindLogo}
+                className="w-12 lg:w-16 xl:w-20"
+                alt="Tailwind CSS Logo"
+              />
+            </div>
+            <a href="https://omnimedia.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-asen transition-all">
+              <span className="text-accent dark:text-abu-putih mr-8">.005</span> OmniMedia
+            </a>
+            <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
+              OmniMedia is a comprehensive browser-based media conversion and compression suite. It enables seamless client-side conversion and compression for video, audio, and images with advanced format tuning, batch file processing, and bulk ZIP export.
+            </p>
+          </div>
+          <Carousel
+            autoPlay={true}
+            showThumbs={false}
+            swipeable={true}
+            showStatus={false}
+            infiniteLoop={true}
+            className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
+          >
+            <div>
+              <img src={foto20} alt="OmniMedia Main" />
+            </div>
+            <div>
+              <img src={foto21} alt="OmniMedia Compress" />
+            </div>
+            <div>
+              <img src={foto22} alt="OmniMedia Detail" />
+            </div>
+          </Carousel>
+        </div>
+      </Animasi>
+
+      {/* Divider */}
+      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/80 dark:border-abu-putih/80 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/60 dark:border-abu-putih/60 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/40 dark:border-abu-putih/40 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-4 sm:border-b-8 transition-all duration-1000 border-accent/20 dark:border-abu-putih/20 mx-6 opacity-0 fade-in2"></div>
+
+      {/* ===================== .004 Work From Office (Row 3: Carousel Left, Text Right) ===================== */}
+      <Animasi>
+        <div className="flex flex-col lg:flex-row m-6 gap-4 items-center">
+          <Carousel
+            autoPlay={true}
+            showThumbs={false}
+            swipeable={true}
+            showStatus={false}
+            infiniteLoop={true}
+            className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
+          >
+            <div>
+              <img src={foto13} alt="" />
+            </div>
+            <div>
+              <img src={foto14} alt="" />
+            </div>
+            <div>
+              <img src={foto15} alt="" />
+            </div>
+            <div>
+              <img src={foto16} alt="" />
+            </div>
+            <div>
+              <img src={foto17} alt="" />
+            </div>
+            <div>
+              <img src={foto18} alt="" />
+            </div>
+            <div>
+              <img src={foto19} alt="" />
+            </div>
+          </Carousel>
+          <div className="keterangan w-full text-secondary lg:w-1/2 flex flex-wrap items-center text-7xl xl:text-9xl sm:text-8xl m-auto">
+            <div className="w-full flex drop-shadow-logo gap-6">
+              <img
+                src={htmlLogo}
+                className="w-12 lg:w-16 xl:w-20"
+                alt="html Logo"
+              />
+              <img
+                src={tailwindLogo}
+                className="w-12 lg:w-16 xl:w-20"
+                alt="tailwind Logo"
+              />
+              <img
+                src={jsLogo}
+                className="w-12 lg:w-16 xl:w-20"
+                alt="javascript Logo"
+              />
+            </div>
+            <a href="#" target="_blank" rel="noreferrer" className="hover:text-asen transition-all">
+              <span className="text-accent transition-all duration-1000 dark:text-abu-putih mr-8">.004</span> Work From Office
+            </a>
+            <p className="courier text-neutral transition-all duration-1000 dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
+              I had the privilege of serving as a web developer for PT. ARC Property Indonesia, a renowned property agency. I was responsible for the creation of their innovative website, which revolutionizes the way they serve their clients by offering fully furnished office spaces for rent.
+            </p>
+          </div>
+        </div>
+      </Animasi>
+
+      {/* Divider */}
+      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/80 dark:border-abu-putih/80 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/60 dark:border-abu-putih/60 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/40 dark:border-abu-putih/40 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-4 sm:border-b-8 transition-all duration-1000 border-accent/20 dark:border-abu-putih/20 mx-6 opacity-0 fade-in2"></div>
+
+      {/* ===================== .003 Sewakantor-update (Row 4: Carousel Right, Text Left on md) ===================== */}
+      <Animasi>
+        <div className="flex flex-col lg:flex-row m-6 gap-4 items-center md:hidden">
+          <Carousel
+            autoPlay={true}
+            showThumbs={false}
+            swipeable={true}
+            showStatus={false}
+            infiniteLoop={true}
+            className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
+          >
+            <div>
+              <img src={foto12} alt="" />
+            </div>
+            <div>
+              <img src={foto11} alt="" />
+            </div>
+          </Carousel>
+          <div className="keterangan w-full text-secondary lg:w-1/2 flex flex-wrap items-center text-6xl xl:text-8xl sm:text-7xl m-auto">
+            <div className="w-full flex drop-shadow-logo">
+              <img
+                src={wordpressLogo}
+                className="w-12 lg:w-16 xl:w-20"
+                alt="Wordpress Logo"
+              />
+            </div>
+            <a href="https://www.sewakantor-update.com/" target="_blank" rel="noreferrer" className="hover:text-asen transition-all">
+              <span className="text-accent transition-all duration-1000 dark:text-abu-putih mr-8">.003</span> Sewakantor-update
+            </a>
+            <p className="courier text-neutral transition-all duration-1000 dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
+              I served as a web developer for PT. Charis Mulia Indonesia, a property agency, for seven months. My responsibilities included maintaining their website, “sewakantor-update.com”, enhancing the user interface, and updating property data.
+            </p>
+          </div>
+        </div>
+      </Animasi>
+      <Animasi>
+        <div className="hidden flex-col lg:flex-row m-6 gap-4 items-center md:flex">
+          <div className="keterangan w-full text-secondary lg:w-1/2 flex flex-wrap items-center text-6xl xl:text-8xl sm:text-7xl m-auto text-right justify-end">
+            <div className="w-full flex drop-shadow-logo gap-6 items-end justify-end">
+              <img
+                src={wordpressLogo}
+                className="w-12 lg:w-16 xl:w-20"
+                alt="Wordpress Logo"
+              />
+            </div>
+            <a href="https://www.sewakantor-update.com/" target="_blank" rel="noreferrer" className="hover:text-asen transition-all">
+              <span className="text-accent transition-all duration-1000 dark:text-abu-putih mr-8">.003</span> Sewakantor-update
+            </a>
+            <p className="courier text-neutral transition-all duration-1000 dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
+              I served as a web developer for PT. Charis Mulia Indonesia, a property agency, for seven months. My responsibilities included maintaining their website, “sewakantor-update.com”, enhancing the user interface, and updating property data.
+            </p>
+          </div>
+          <Carousel
+            autoPlay={true}
+            showThumbs={false}
+            swipeable={true}
+            showStatus={false}
+            infiniteLoop={true}
+            className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
+          >
+            <div>
+              <img src={foto12} alt="" />
+            </div>
+            <div>
+              <img src={foto11} alt="" />
+            </div>
+          </Carousel>
+        </div>
+      </Animasi>
+
+      {/* Divider */}
+      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/80 dark:border-abu-putih/80 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/60 dark:border-abu-putih/60 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/40 dark:border-abu-putih/40 mx-6 opacity-0 fade-in2"></div>
+      <div className="hidden md:block border-b-4 sm:border-b-8 transition-all duration-1000 border-accent/20 dark:border-abu-putih/20 mx-6 opacity-0 fade-in2"></div>
+
+      {/* ===================== .002 DomPortof (Row 5: Carousel Left, Text Right) ===================== */}
+      <Animasi>
+        <div className="flex flex-col lg:flex-row m-6 gap-4 items-center">
           <Carousel
             autoPlay={true}
             showThumbs={false}
@@ -155,16 +394,16 @@ export default function List() {
               <img
                 src={reactLogo}
                 className="w-12 lg:w-16 xl:w-20"
-                alt="HTML Logo"
+                alt="React Logo"
               />
               <img
                 src={tailwindLogo}
                 className="w-12 lg:w-16 xl:w-20"
-                alt="CSS Logo"
+                alt="Tailwind CSS Logo"
               />
             </div>
-            <a href="https://dominic-christiansen.vercel.app/" target="_blank" className="hover:text-asen transition-all">
-            <span className="text-accent dark:text-abu-putih transition-all duration-1000 mr-8 ">.002</span> DomPortof
+            <a href="https://dominic-christiansen.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-asen transition-all">
+              <span className="text-accent dark:text-abu-putih transition-all duration-1000 mr-8">.002</span> DomPortof
             </a>
             <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
               I’m working on my first client project, creating a personal portfolio using React.js and Tailwind CSS. This project is a key milestone in my career, showcasing my skills and commitment to delivering high-quality, user-friendly websites.
@@ -172,98 +411,15 @@ export default function List() {
           </div>
         </div>
       </Animasi>
-      <Animasi>
-        <div className="hidden flex-col lg:flex-row m-6 gap-4 items-center md:flex">
-          <div className="keterangan w-full text-secondary lg:w-1/2 flex flex-wrap items-center text-7xl xl:text-9xl sm:text-8xl m-auto text-right justify-end">
-            <div className="w-full flex drop-shadow-logo gap-6 items-end justify-end">
-              <img
-                src={reactLogo}
-                className="w-12 lg:w-16 xl:w-20"
-                alt="HTML Logo"
-              />
-              <img
-                src={tailwindLogo}
-                className="w-12 lg:w-16 xl:w-20"
-                alt="CSS Logo"
-              />
-            </div>
-            <a href="https://dominic-christiansen.vercel.app/" target="_blank" className="hover:text-asen transition-all">
-            <span className="text-accent dark:text-abu-putih mr-8 ">.002</span> DomPortof
-            </a>
-            <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
-              I’m working on my first client project, creating a personal portfolio using React.js and Tailwind CSS. This project is a key milestone in my career, showcasing my skills and commitment to delivering high-quality, user-friendly websites.
-            </p>
-          </div>
-          <Carousel
-            autoPlay={true}
-            showThumbs={false}
-            swipeable={true}
-            showStatus={false}
-            infiniteLoop={true}
-            className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
-          >
-            <div>
-              <img src={foto6} alt="" />
-            </div>
-            <div>
-              <img src={foto7} alt="" />
-            </div>
-            <div>
-              <img src={foto8} alt="" />
-            </div>
-            <div>
-              <img src={foto9} alt="" />
-            </div>
-            <div>
-              <img src={foto10} alt="" />
-            </div>
-          </Carousel>
-        </div>
-      </Animasi>
+
+      {/* Divider */}
       <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in2"></div>
       <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/80 dark:border-abu-putih/80 mx-6 opacity-0 fade-in2"></div>
       <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/60 dark:border-abu-putih/60 mx-6 opacity-0 fade-in2"></div>
       <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/40 dark:border-abu-putih/40 mx-6 opacity-0 fade-in2"></div>
       <div className="hidden md:block border-b-4 sm:border-b-8 transition-all duration-1000 border-accent/20 dark:border-abu-putih/20 mx-6 opacity-0 fade-in2"></div>
-      <Animasi>
-        <div className="flex flex-col lg:flex-row m-6 gap-4 items-center">
-          <Carousel
-            autoPlay={true}
-            showThumbs={false}
-            swipeable={true}
-            showStatus={false}
-            infiniteLoop={true}
-            className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
-          >
-            <div>
-              <img src={foto12} alt="" />
-            </div>
-            <div>
-              <img src={foto11} alt="" />
-            </div>
-          </Carousel>
-          <div className="keterangan w-full text-secondary lg:w-1/2 flex flex-wrap items-center text-6xl xl:text-8xl sm:text-7xl m-auto">
-            <div className="w-full flex drop-shadow-logo">
-              <img
-                src={wordpressLogo}
-                className="w-12 lg:w-16 xl:w-20"
-                alt="Wordpress Logo"
-              />
-            </div>
-            <a href="https://www.sewakantor-update.com/" target="_blank" className="hover:text-asen transition-all">
-            <span className="text-accent transition-all duration-1000 dark:text-abu-putih mr-8 ">.003</span> Sewakantor-update
-            </a>
-            <p className="courier text-neutral transition-all duration-1000 dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
-              I served as a web developer for PT. Charis Mulia Indonesia, a property agency, for seven months. My responsibilities included maintaining their website, “sewakantor-update.com”, enhancing the user interface, and updating property data.
-            </p>
-          </div>
-        </div>
-      </Animasi>
-      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent dark:border-abu-putih mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/80 dark:border-abu-putih/80 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/60 dark:border-abu-putih/60 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/40 dark:border-abu-putih/40 mx-6 opacity-0 fade-in2"></div>
-      <div className="hidden md:block border-b-4 sm:border-b-8 transition-all duration-1000 border-accent/20 dark:border-abu-putih/20 mx-6 opacity-0 fade-in2"></div>
+
+      {/* ===================== .001 GAMING GEAR (Row 6: Carousel Right, Text Left on md) ===================== */}
       <Animasi>
         <div className="flex flex-col lg:flex-row m-6 gap-4 items-center md:hidden">
           <Carousel
@@ -275,50 +431,43 @@ export default function List() {
             className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
           >
             <div>
-              <img src={foto13} alt="" />
+              <img src={foto1} alt="" />
             </div>
             <div>
-              <img src={foto14} alt="" />
+              <img src={foto2} alt="" />
             </div>
             <div>
-              <img src={foto15} alt="" />
+              <img src={foto3} alt="" />
             </div>
             <div>
-              <img src={foto16} alt="" />
+              <img src={foto4} alt="" />
             </div>
             <div>
-              <img src={foto17} alt="" />
-            </div>
-            <div>
-              <img src={foto18} alt="" />
-            </div>
-            <div>
-              <img src={foto19} alt="" />
+              <img src={foto5} alt="" />
             </div>
           </Carousel>
           <div className="keterangan w-full text-secondary lg:w-1/2 flex flex-wrap items-center text-7xl xl:text-9xl sm:text-8xl m-auto">
-            <div className="w-full flex drop-shadow-logo">
+            <div className="w-full flex drop-shadow-logo gap-6">
               <img
                 src={htmlLogo}
                 className="w-12 lg:w-16 xl:w-20"
-                alt="html Logo"
+                alt="HTML Logo"
               />
               <img
-                src={tailwindLogo}
+                src={cssLogo}
                 className="w-12 lg:w-16 xl:w-20"
-                alt="tailwind Logo"
+                alt="CSS Logo"
               />
-              <img
-                src={jsLogo}
-                className="w-12 lg:w-16 xl:w-20"
-                alt="javascript Logo"
-              />
+              <img src={jsLogo} className="w-12 lg:w-16 xl:w-20" alt="JS Logo" />
             </div>
-            <a href="#" target="_blank" className="hover:text-asen transition-all">
-            <span className="text-accent transition-all duration-1000 dark:text-abu-putih mr-8 ">.004</span> Work From Office
+            <a href="https://jovchan.github.io/gaming-gear/" target="_blank" rel="noreferrer" className="hover:text-asen transition-all">
+              <span className="text-accent mr-8 transition-all duration-1000 dark:text-abu-putih">.001</span> GAMING GEAR
             </a>
-            <p className="courier text-neutral transition-all duration-1000 dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
-              I had the privilege of serving as a web developer for PT. ARC Property Indonesia, a renowned property agency. I was responsible for the creation of their innovative website, which revolutionizes the way they serve their clients by offering fully furnished office spaces for rent.
+            <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
+              This website represents my inaugural foray into web development,
+              utilizing HTML, CSS, and JavaScript. It serves as a dedicated
+              platform to showcase the gaming equipment that has been integral to
+              my personal computing setup from its inception.
             </p>
           </div>
         </div>
@@ -330,24 +479,23 @@ export default function List() {
               <img
                 src={htmlLogo}
                 className="w-12 lg:w-16 xl:w-20"
-                alt="html Logo"
+                alt="HTML Logo"
               />
               <img
-                src={tailwindLogo}
+                src={cssLogo}
                 className="w-12 lg:w-16 xl:w-20"
-                alt="tailwind Logo"
+                alt="CSS Logo"
               />
-              <img
-                src={jsLogo}
-                className="w-12 lg:w-16 xl:w-20"
-                alt="javascript Logo"
-              />
+              <img src={jsLogo} className="w-12 lg:w-16 xl:w-20" alt="JS Logo" />
             </div>
-            <div className="hover:text-asen transition-all">
-            <span className="text-accent transition-all duration-1000 dark:text-abu-putih mr-8 ">.004</span> Work From Office
-            </div>
-            <p className="courier text-neutral transition-all duration-1000 dark:text-primary text-xl xl:text-2xl 2xl:text-3xl mt-2">
-              I had the privilege of serving as a web developer for PT. ARC Property Indonesia, a renowned property agency. I was responsible for the creation of their innovative website, which revolutionizes the way they serve their clients by offering fully furnished office spaces for rent.
+            <a href="https://jovchan.github.io/gaming-gear/" target="_blank" rel="noreferrer" className="hover:text-asen transition-all">
+              <span className="text-accent mr-8 transition-all duration-1000 dark:text-abu-putih">.001</span> GAMING GEAR
+            </a>
+            <p className="courier text-neutral dark:text-primary transition-all duration-1000 text-xl xl:text-2xl 2xl:text-3xl mt-0">
+              This website represents my inaugural foray into web development,
+              utilizing HTML, CSS, and JavaScript. It serves as a dedicated
+              platform to showcase the gaming equipment that has been integral to
+              my personal computing setup from its inception.
             </p>
           </div>
           <Carousel
@@ -359,29 +507,25 @@ export default function List() {
             className="w-full lg:w-1/2 transition-all drop-shadow-3xl"
           >
             <div>
-              <img src={foto13} alt="" />
+              <img src={foto1} alt="" />
             </div>
             <div>
-              <img src={foto14} alt="" />
+              <img src={foto2} alt="" />
             </div>
             <div>
-              <img src={foto15} alt="" />
+              <img src={foto3} alt="" />
             </div>
             <div>
-              <img src={foto16} alt="" />
+              <img src={foto4} alt="" />
             </div>
             <div>
-              <img src={foto17} alt="" />
-            </div>
-            <div>
-              <img src={foto18} alt="" />
-            </div>
-            <div>
-              <img src={foto19} alt="" />
+              <img src={foto5} alt="" />
             </div>
           </Carousel>
         </div>
       </Animasi>
+
+      {/* Trailing Dividers */}
       <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/80 dark:border-abu-putih/80 mx-6 opacity-0 fade-in2"></div>
       <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/60 dark:border-abu-putih/60 mx-6 opacity-0 fade-in2"></div>
       <div className="hidden md:block border-b-2 sm:border-b-2 transition-all duration-1000 border-accent/40 dark:border-abu-putih/40 mx-6 opacity-0 fade-in2"></div>
