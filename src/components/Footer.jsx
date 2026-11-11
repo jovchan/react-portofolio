@@ -1,27 +1,26 @@
-/* eslint-disable react/prop-types */
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
+function Animasi(props) {
+  const animasi = useRef(null);
+  const isInView = useInView(animasi, { once: true });
+
+  return (
+    <section ref={animasi}>
+      <span
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0.2,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
+        {props.children}
+      </span>
+    </section>
+  );
+}
+
 export default function Footer() {
-  function Animasi(props) {
-    const animasi = useRef(null);
-    const isInView = useInView(animasi, { once: true });
-
-    return (
-      <section ref={animasi}>
-        <span
-          style={{
-            transform: isInView ? "none" : "translateX(-200px)",
-            opacity: isInView ? 1 : 0.2,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-          }}
-        >
-          {props.children}
-        </span>
-      </section>
-    );
-  }
-
   function scrollToTop() {
     window.scrollTo({
       top: 0,

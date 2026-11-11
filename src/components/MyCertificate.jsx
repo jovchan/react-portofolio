@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import cer1 from "./photos/cer/cer1.png";
 import cer2 from "./photos/cer/cer2.png";
 import cer3 from "./photos/cer/cer3.png";
@@ -23,25 +22,26 @@ import Pdf9 from "./photos/cer/cer9.pdf";
 const images = [cer6, cer7, cer8, cer9, cer5, cer4, cer3, cer2, cer1];
 const pdfs = [Pdf6, Pdf7, Pdf8, Pdf9, Pdf5, Pdf4, Pdf3, Pdf2, Pdf1];
 
-export default function Certificate() {
-  function Animasi(props) {
-    const animasi = useRef(null);
-    const isInView = useInView(animasi, { once: true });
+function Animasi(props) {
+  const animasi = useRef(null);
+  const isInView = useInView(animasi, { once: true });
 
-    return (
-      <section ref={animasi}>
-        <span
-          style={{
-            transform: isInView ? "none" : "translateX(-200px)",
-            opacity: isInView ? 1 : 0.2,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-          }}
-        >
-          {props.children}
-        </span>
-      </section>
-    );
-  }
+  return (
+    <section ref={animasi}>
+      <span
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0.2,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
+        {props.children}
+      </span>
+    </section>
+  );
+}
+
+export default function Certificate() {
 
   return (
     <div>

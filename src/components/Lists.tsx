@@ -35,6 +35,25 @@ import wordpressLogo from "../assets/png/wordpress.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+function Animasi({ children }: { children: React.ReactNode }) {
+  const animasi = useRef(null);
+  const isInView = useInView(animasi, { once: true });
+
+  return (
+    <section ref={animasi}>
+      <span
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0.2,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}
+      >
+        {children}
+      </span>
+    </section>
+  );
+}
+
 export default function List() {
   const [colorChange, setColorChange] = useState({ list1: false });
 
@@ -48,25 +67,6 @@ export default function List() {
       clearTimeout(timer1);
     };
   }, []);
-
-  function Animasi({ children }: { children: React.ReactNode }) {
-    const animasi = useRef(null);
-    const isInView = useInView(animasi, { once: true });
-
-    return (
-      <section ref={animasi}>
-        <span
-          style={{
-            transform: isInView ? "none" : "translateX(-200px)",
-            opacity: isInView ? 1 : 0.2,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-          }}
-        >
-          {children}
-        </span>
-      </section>
-    );
-  }
 
   return (
     <div
